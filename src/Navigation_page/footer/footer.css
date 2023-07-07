@@ -1,0 +1,39 @@
+
+.footer-section{
+    margin-top: 40px;
+    width: 100%;
+    color:#677788;
+    height: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+   
+  }
+  
+  
+  .footer-section .copy_right{
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: 1;
+  }
+  
+  .right-container{
+    margin-left: 200px;
+  }
+  .footer-section .right{
+    display: flex;
+    flex-direction: row-reverse;
+    float: right;
+    margin-left: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: 1;
+  }
+  
+  .footer-section .software_setting{
+    color: #fff;
+    background-color: #00c9a7;
+    border-radius: 5px;
+    margin-top: -5px;
+    padding: 5px;
+  }
+  
+  
