@@ -16,7 +16,7 @@ import PosOrders from "./Navigation_page/Pages/POS/orders";
 import SubscribedEmails from "./Navigation_page/Pages/User_Management/subscribed_mail";
 import SubCategories from "./Navigation_page/Pages/Catergory_Setup/sub_categories";
 import ProductReviews from "./Navigation_page/Pages/User_Management/product_review";
-import NewJoiningRequest from "./Navigation_page/Pages/NewJoiningRequest/NewJoinigRequest";
+import NewJoiningRequest from "./Navigation_page/Pages/User_Management/Deliveryman/new_joining";
 
 function App() {
   const [inactive, setInactive] = useState(false);
