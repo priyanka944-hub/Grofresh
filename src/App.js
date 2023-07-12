@@ -20,6 +20,10 @@ import NewJoiningRequest from "./Navigation_page/Pages/User_Management/Deliverym
 import DeliveryManReviews from "./Navigation_page/Pages/User_Management/Deliveryman/delivery_man_reviews";
 import CustomerSettings from "./Navigation_page/Pages/User_Management/customer_settings";
 import Messages from "./Navigation_page/Pages/help&support/messages";
+import Limitedstock from "./Navigation_page/Pages/Product_setup/limited_stocks";
+import ThirdParty from "./Navigation_page/Pages/System_settings/third_party";
+import PageSetup from "./Navigation_page/Pages/System_settings/pages&Media/page_setup";
+import AddNewDeliveryMan from "./Navigation_page/Pages/User_Management/Deliveryman/add_new";
 
 function App() {
   const [inactive, setInactive] = useState(false);
@@ -71,11 +75,22 @@ function App() {
             />
             <Route 
             path="/delivery-man-delivery-man-reviews" element={<DeliveryManReviews/>} />
+            <Route 
+            path="/deliveryman-add-new-delivery-man" element={<AddNewDeliveryMan/>} />
+
+
 
             {/* User Management */}
             <Route path={"/subcribed-emails"} element={<SubscribedEmails />} />
             <Route path={"/product-reviews"} element={<ProductReviews />} />
             <Route path={"/customer-settings"} element={<CustomerSettings/>}/>
+
+             {/* Product Management */}
+             <Route path={"/product-setup-limited-stocks"} element={<Limitedstock/>}/>
+
+             {/* System Settings */}
+             <Route path={"/third-party"} element={<ThirdParty/>}/>
+             <Route path={"/pagesandmedia-page-setup"} element={<PageSetup/>}/>
           </Routes>
         </div>
       </Router>
