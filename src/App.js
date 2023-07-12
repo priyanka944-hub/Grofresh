@@ -17,6 +17,9 @@ import SubscribedEmails from "./Navigation_page/Pages/User_Management/subscribed
 import SubCategories from "./Navigation_page/Pages/Catergory_Setup/sub_categories";
 import ProductReviews from "./Navigation_page/Pages/User_Management/product_review";
 import NewJoiningRequest from "./Navigation_page/Pages/User_Management/Deliveryman/new_joining";
+import DeliveryManReviews from "./Navigation_page/Pages/User_Management/Deliveryman/delivery_man_reviews";
+import CustomerSettings from "./Navigation_page/Pages/User_Management/customer_settings";
+import Messages from "./Navigation_page/Pages/help&support/messages";
 
 function App() {
   const [inactive, setInactive] = useState(false);
@@ -51,6 +54,9 @@ function App() {
             <Route path={"/Oders-pending"} element={<PendingOrders />} />
             <Route path={"/Oders-returned"} element={<ReturedOrders />} />
 
+            {/*Help & Support section*/}
+            <Route path={"/messages"}element={<Messages/>}/>
+
             {/* Categories */}
 
             <Route
@@ -63,10 +69,13 @@ function App() {
               path="/delivery-man-new-joinig-request"
               element={<NewJoiningRequest />}
             />
+            <Route 
+            path="/delivery-man-delivery-man-reviews" element={<DeliveryManReviews/>} />
 
             {/* User Management */}
             <Route path={"/subcribed-emails"} element={<SubscribedEmails />} />
             <Route path={"/product-reviews"} element={<ProductReviews />} />
+            <Route path={"/customer-settings"} element={<CustomerSettings/>}/>
           </Routes>
         </div>
       </Router>
