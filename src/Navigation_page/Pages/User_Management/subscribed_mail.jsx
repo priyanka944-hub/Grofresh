@@ -3,8 +3,8 @@ import './subscribed.css'
 export default function SubscribedEmails() {
   return (
    <>
-    <div className=''>
-    <div className='page-header'>
+    <div className='subscribe'>
+    <div className="page">
         <h1 className='page-title'>
             <span><img src="https://grofresh-admin.6amtech.com/public/assets/admin/img/employee.png" className='logo' alt="logo" /></span>
             <span>Subscribed Customers</span>

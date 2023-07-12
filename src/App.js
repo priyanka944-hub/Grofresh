@@ -54,12 +54,12 @@ function App() {
 
 {/* Categories */}
 
-<Route path={'/catergory-setup-sub-categories'} element={<SubCategories/>}/>
+{/* <Route path={'/catergory-setup-sub-categories'} element={<SubCategories/>}/> */}
 
 
 {/* User Management */}
-<Route path={'/subcribed-emails'} element={<SubscribedEmails/>}/>
-<Route path={'/product-reviews'} element={<ProductReviews/>}/>
+{/* <Route path={'/subcribed-emails'} element={<SubscribedEmails/>}/>
+<Route path={'/product-reviews'} element={<ProductReviews/>}/> */}
 
   </Routes>
 
