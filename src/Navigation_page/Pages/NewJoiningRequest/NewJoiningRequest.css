@@ -1,0 +1,65 @@
+.newJoining > h4 {
+  padding: 20px;
+}
+.newJoining > .heading {
+  font-family: inter, sans-serif;
+}
+.newJoining p {
+  cursor: pointer;
+  font-weight: bolder;
+}
+.newJoining .first {
+  color: #24bac3;
+  border-bottom: 2px solid #24bac3;
+}
+.newJoining .second {
+  color: #24bac3;
+  border-bottom: 2px solid #24bac3;
+  overflow-x: auto;
+}
+.newJoining > .first-container {
+  font-size: 14px;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: grey;
+}
+.newJoining > .second-container {
+  font-size: 14px;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+/* width */
+::-webkit-scrollbar {
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.image-icon {
+  height: 40px;
+  border-radius: 50%;
+}
+.idimage {
+  height: 70px;
+  border-radius: 50%;
+}
