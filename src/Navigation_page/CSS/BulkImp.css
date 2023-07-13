@@ -1,0 +1,55 @@
+.Bulkimp{
+    width: 80%;
+}
+.Bulkimp .page-header .page-title{
+    text-align: left;
+    font-size: 24px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+/* .Bulkimp .card{
+    margin-top: 20px;
+} */
+.Bulkimp .card .col-12{
+    text-align: left;
+    margin-left: 20px;
+    padding: 15px;
+}
+.Bulkimp .card .col-12 .title{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.Bulkimp .col-md-12 .card .card-body .form-group .drag--area{
+    margin: 5px;
+    border: 3px dashed rgb(201, 198, 198);
+    padding: 50px 100px;
+    width: 800px;
+    border-radius: 5px;
+}
+.Bulkimp .col-md-12 .card .card-body .form-group .drag--area .cloud{
+    font-size: 30px;
+}
+.Bulkimp .col-md-12{
+    margin-top: 15px;
+}
+.Bulkimp .col-md-12 .card .header a{
+    color: rgb(7, 104, 104);
+    text-decoration: none;
+}
+.Bulkimp .col-md-12 .card .card-body .col-12 .btn1{
+    background-color: aliceblue;
+    padding: 10px;
+    width: 100px;
+}
+.Bulkimp .col-md-12 .card .card-body .col-12 .btn1:hover{
+    background-color: rgb(215, 215, 215);
+}
+.Bulkimp .col-md-12 .card .card-body .col-12 .btn2{
+    background-color: rgb(7, 104, 104);
+    color: white;
+}
+.Bulkimp .col-md-12 .card .card-body .col-12 .btn2:hover{
+    background-color: rgb(12, 130, 130);
+    color: aliceblue;
+}

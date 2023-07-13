@@ -1,0 +1,44 @@
+.Limitedstock{
+    width: 80%;
+}
+.Limitedstock .page-header{
+    text-align: left;
+}
+.Limitedstock .page-header .page-title{
+    text-align: left;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.Limitedstock .page-header .para{
+    margin-left: 30px;
+}
+
+.Limitedstock .page-header .page-title .badge{ 
+    background-color: rgb(244, 243, 243);
+    font-size: 12px;
+    margin-left: 5px;
+    color: black;
+}
+.Limitedstock .row .card .card-header{
+    background-color: white;
+}
+.Limitedstock .row .card .card-header .input-group{
+    width: 400px;
+}
+.Limitedstock .row .card .card-header .input-group .input-group-text{
+    background-color: rgb(4, 99, 99);
+    color: white;
+}
+.Limitedstock .row .card .table-responsive .table{
+    text-align: left;
+}
+.Limitedstock .row .card .table-responsive .table .lim-head{
+    background-color: rgb(207, 244, 233);
+    height: 70px;
+}
+.Limitedstock .row .card .table-responsive .table .sorry{
+    width: 150px;
+    position: relative;
+    left: 700px;
+} 

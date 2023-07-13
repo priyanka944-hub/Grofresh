@@ -1,0 +1,70 @@
+.subcategories{
+    width: 80%;
+}
+.subcategories .row .head{
+    font-size: 24px;
+    margin-left: 30px;
+}
+ .subcategories .col-12 .card .card-header .card--header {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.subcategories .card .card-header .input-group .tio-input-search {
+    position: absolute;
+    top: 3px;
+    left: 150px;
+    z-index: 9;
+    
+}
+.subcategories .card .card-header .input-group .input-group-append .input-group-text{
+    background-color: green;
+    color: aliceblue;
+}
+.subcategories .col-12 .card .table-responsive .table .sub-head{
+    background-color: rgb(189, 238, 232);
+    height: 60px;
+    text-align: left;
+}
+
+.subcategories .col-12 .card .table-responsive .table td{
+    height: 60px;
+    text-align: left;
+}
+.subcategories .col-12 .card .table-responsive .table .form-check .form-check-input{
+    position: relative;
+    left: 20px;
+    
+}
+.subcategories .col-12 .card .table-responsive .table .cat1{
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    border: 2px solid rgb(246, 244, 244);
+}
+.subcategories .col-12 .card .table-responsive .table .icon1{
+    border: 2px solid  skyblue;
+    color:skyblue;
+    margin: 2px;
+    border-radius: 5px;
+    padding: 3px;
+    background-color:  white;
+}
+.subcategories .col-12 .card .table-responsive .table .icon2{
+    border: 2px solid  red;
+    color:red;
+    margin: 2px;
+    border-radius: 5px;
+    padding: 3px;
+    background-color:  white;
+}
+.subcategories .col-12 .card .table-responsive .table .icon1:hover{
+    background-color:skyblue ;
+    color: aliceblue;
+}
+.subcategories .col-12 .card .table-responsive .table .icon2:hover{
+    background-color:red ;
+    color: aliceblue;
+}

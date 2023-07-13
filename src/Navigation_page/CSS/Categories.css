@@ -1,0 +1,75 @@
+.categories{
+    width: 85%;
+}
+.categories .row .head{
+    font-size: 24px;
+   margin-left: 30px;
+}
+.categories .row .card .card-body .del .img{
+    width: 100px;
+    position: relative;
+    left: 600px;
+    margin-bottom: 10px;
+}
+ .categories .col-12 .card .card-header .card--header {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.categories .card .card-header .input-group .tio-input-search {
+    position: absolute;
+    top: 3px;
+    left: 150px;
+    z-index: 9;
+}
+/* .categories .card{
+    margin: 0;
+} */
+.categories .card .card-header{
+    background-color: white;
+}
+.categories .card .card-header .input-group .input-group-append .input-group-text{
+    background-color: green;
+    color: aliceblue;
+}
+.categories .col-12 .card .table-responsive .table .cat-head{
+    background-color: rgb(189, 238, 232);
+    height: 60px;
+   
+}
+.categories .col-12 .card .table-responsive .table .form-check .form-check-input{
+    position: relative;
+    left: 30px;
+}
+.categories .col-12 .card .table-responsive .table .cat1{
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    border: 2px solid rgb(246, 244, 244);
+}
+.categories .col-12 .card .table-responsive .table .icon1{
+    border: 2px solid  skyblue;
+    color:skyblue;
+    margin: 2px;
+    border-radius: 5px;
+    padding: 3px;
+    background-color:  white;
+}
+.categories .col-12 .card .table-responsive .table .icon2{
+    border: 2px solid  red;
+    color:red;
+    margin: 2px;
+    border-radius: 5px;
+    padding: 3px;
+    background-color:  white;
+}
+.categories .col-12 .card .table-responsive .table .icon1:hover{
+    background-color:skyblue ;
+    color: aliceblue;
+}
+.categories .col-12 .card .table-responsive .table .icon2:hover{
+    background-color:red ;
+    color: aliceblue;
+}

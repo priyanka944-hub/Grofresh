@@ -1,0 +1,60 @@
+.Subscribedemails .page-header .page-title{
+    text-align: left;
+    margin: 20px 30px;
+    font-size: 24px;  
+}
+
+
+.Subscribedemails .page-header .page-title .logo{
+    width: 20px;
+}
+.Subscribedemails .page-header .page-title .badge{
+    background-color: rgb(225, 247, 240);
+    font-size: 10px;
+    color: rgb(47, 94, 78);
+    margin-left: 3px;
+}
+.Subscribedemails .card{
+    margin: 30px;
+}
+.Subscribedemails .card .card-header{
+    background-color: white;
+    margin: 20px 0px;
+}
+
+.Subscribedemails .card .card-header .card--header{
+    display: flex;
+}
+.Subscribedemails .card .card-header .card--header .input-group .search{
+    width: 350px;
+    border:1px solid skyblue;
+    padding: 10px;
+}
+.Subscribedemails .card .card-header .card--header .input-group .input-group-append .input-group-text{
+    background-color: rgb(30, 91, 81);
+    color: white;
+    padding: 10px;
+}
+.Subscribedemails .card .table-responsive .table .thead-light{
+    background-color: rgb(230, 244, 239);
+    color: gray;
+    height: 70px;
+}
+.Subscribedemails .card .table {
+    text-align: left;
+}
+.Subscribedemails .card .table-responsive .table  td{
+    height: 50px;
+    margin: 20px;
+   
+}
+.Subscribedemails .card .table-responsive .table a{
+    text-decoration: none; 
+}
+.Subscribedemails .card .table-responsive .table a:link{
+    color: green;
+    
+}   
+.Subscribedemails .card .table-responsive .table  a:hover{
+    color: blue;
+}

@@ -1,12 +1,15 @@
 import React from 'react'
-import './subscribed.css'
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
+import logo from '../assets/subscriber.png'
+import './css/Subscribed.css'
 export default function SubscribedEmails() {
   return (
    <>
-    <div className=''>
+   <div className=' Subscribedemails'>
     <div className='page-header'>
         <h1 className='page-title'>
-            <span><img src="https://grofresh-admin.6amtech.com/public/assets/admin/img/employee.png" className='logo' alt="logo" /></span>
+            <span><img src={logo} className='logo' alt="logo" /></span>
             <span>Subscribed Customers</span>
             <span className='badge'>9</span>
         </h1>
@@ -25,7 +28,7 @@ export default function SubscribedEmails() {
                 
                 </form>
             </div>
-        </div>
+        </div> 
 
 
         <div className='table-responsive'>
