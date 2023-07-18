@@ -1,0 +1,37 @@
+.container.flex{
+    display: flex;
+    flex: row;
+}
+.container .card .header{
+    background-color: #FFFFFF;
+}
+.container .card .button .reset{
+    background-color:#F4F5F7;
+     border:none;
+      width:100px;
+       height:40px
+}
+.container .card .reset:hover{
+    background-color: #DCDCDE;
+}
+.container .card .button .submit{
+    background-color:#107980;
+    border: none;
+    width: 100px;
+    height: 40px;
+}
+.container .card .submit:hover{
+    background-color:#0C6970;
+}
+.container .row .col .label{
+    border: 2px dashed;
+}
+.container .row .img{
+    margin-left: 100px;
+}
+.container .card .width{
+    font-size: large;
+}
+.container .card-header.icon{
+    margin-top: 2px;
+}

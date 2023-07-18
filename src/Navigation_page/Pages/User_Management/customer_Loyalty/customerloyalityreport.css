@@ -1,0 +1,45 @@
+.container .card .filter{
+    background-color: #FFFFFF;
+}
+.container .icon{
+    margin-top: 5px;
+}
+.container .image{
+    margin-left: 240px;
+}
+.container .debit{
+    margin-left: 40px;
+}
+.container .whole{
+    background-color: #D9F2E9;
+}
+.container .whole1{
+    background-color:#FEEBEB;
+}
+.container .whole3{
+    background-color: #D9EFFF;
+}
+/* .back{
+    background-color:#E5F9F6;
+} */
+.Loyality{
+    border: none;
+}
+.container .button .reset{
+    background-color:#F4F5F7;
+     border:none;
+      width:100px;
+       height:40px
+}
+.container .reset:hover{
+    background-color: #DCDCDE;
+}
+.container .button .submit{
+    background-color:#107980;
+    border: none;
+    width: 100px;
+    height: 40px;
+} 
+.container .submit:hover{
+    background-color:#0C6970;
+}

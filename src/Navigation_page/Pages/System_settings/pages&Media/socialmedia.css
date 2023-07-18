@@ -1,0 +1,25 @@
+.container .flex{
+    display: flex;
+    flex-direction: row;
+}
+.container .top{
+    margin-top: 10px;
+}
+.container .card .card-body .button .reset{
+    background-color:#F4F5F7;
+     border:none;
+      width:100px;
+       height:40px
+}
+.container .card .card-body .reset:hover{
+    background-color: #DCDCDE;
+}
+.container .card .card-body .button .submit{
+    background-color:#107980;
+    border: none;
+    width: 100px;
+    height: 40px;
+}
+.container .card .card-body .submit:hover{
+    background-color: #0B5E65;
+}

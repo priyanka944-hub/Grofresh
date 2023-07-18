@@ -1,8 +1,8 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
-import logo from '../assets/subscriber.png'
-import './css/Subscribed.css'
+import logo from '../../../assest/subscriber.png'
+// import './Subscribed.css'
 export default function SubscribedEmails() {
   return (
    <>

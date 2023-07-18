@@ -24,7 +24,7 @@ const MenuItems = [
     {name:"Earning Report",to:`/earning-report`,iconname:"bi bi-activity"},
     {name:"Expense Report", to:`expense-report`,iconname:"bi bi-bar-chart"},
     {name:"Analytics",iconname:"bi bi-pie-chart",subMenus:[
-        {name:"Keyword Search",to:`/analytics-keyword0search`},
+        {name:"Keyword Search",to:`/analytics-keyword-search`},
         {name:"Customer Search",to:'/analytics-customer-search'},
     ]},
     {heading:"User Management",name:"Customer List",to:`/customer-list`,iconname:"bi bi-person"},
@@ -43,19 +43,19 @@ const MenuItems = [
         {name:"Delivery Man Reviews",to:'/delivery-man-delivery-man-reviews'},
     ]},
     {name:"Employees",iconname:"bi bi-diagram-3",subMenus:[
-        {name:"Employee Role Setup",to:`employees-employee-role-setup`},
-        {name:"Employee List",to:`employee-list`},
-        {name:"Add New Employee",to:`add-new employee`}
+        {name:"Employee Role Setup",to:`/employees-employee-role-setup`},
+        {name:"Employee List",to:`/employee-list`},
+        {name:"Add New Employee",to:`/add-new-employee`}
         ]},
-    {heading:"System Settings",name:"Business Setup",iconname:"bi bi-gear",to:`business-setup`},
+    {heading:"System Settings",name:"Business Setup",iconname:"bi bi-gear",to:`/business-setup`},
     {name:"Branch Setup",iconname:"bi bi-house-gear",subMenus:[
-        {name:"Add New",to:`bramch-setup-add-new`},
-        {name:"List",to:`branch-setup-list`},
+        {name:"Add New",to:`/bramch-setup-add-new`},
+        {name:"List",to:`/branch-setup-list`},
     ]},
     {name:"3rd Party",iconname:"bi bi-calendar3-range-fill",to:`/third-party`},
     {name:"Pages & Media",iconname:"bi bi-file-earmark",subMenus:[
-        {name:"Page Setup",to:`pagesandmedia-page-setup`},
-        {name:"Social-Media",to:`pagesandmedia-social-media`},
+        {name:"Page Setup",to:`/pagesandmedia-page-setup`},
+        {name:"Social-Media",to:`/pagesandmedia-social-media`},
     ]},
     {name:"System setup",iconname:"bi bi-shield-check"},
     {name:"",iconname:"",to:``}

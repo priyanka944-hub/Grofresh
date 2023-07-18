@@ -1,0 +1,27 @@
+.container .flex{
+    display: flex;
+    flex-direction: row;
+}
+.container .flex .icon{
+    margin-top: 2px;
+}
+.span{
+    margin-top: 8px;
+    background-color: silver;
+    width: 20px;
+    height: 23px;
+    border-radius: 40%;
+}
+.container .flex .badge{
+    background-color:#F1F3F5;
+    width:30px;
+    height: 35px;;
+}
+.container .card .search{
+    background-color: #107980;
+    width:70px;
+    height: 30px;
+}
+.h1{
+    background-color: #F2FCFD;
+}
