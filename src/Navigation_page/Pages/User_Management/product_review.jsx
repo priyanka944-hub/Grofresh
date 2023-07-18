@@ -2,10 +2,10 @@ import React from 'react'
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import './css/Productreviews.css'
-import logo from '../assets/productreviews.png'
-import img1 from '../assets/prolist1.png'
-import img2 from '../assets/prolist15.png'
-import img3 from '../assets/prolist14.png'
+import logo from '../../../assest/productreviews.png'
+import img1 from '../../../assest/prolist1.png'
+import img2 from '../../../assest/prolist15.png'
+import img3 from '../../../assest/prolist14.png'
 import { StarFill} from 'react-bootstrap-icons';
 export default function ProductReviews() {
   return (
