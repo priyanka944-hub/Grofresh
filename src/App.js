@@ -54,7 +54,7 @@ function App() {
 
             <Route path={"/pos-orders"} element={<PosOrders />} />
             {/* report analytics */}
-            <Route path={"/report-analytics-earning-report"} element={<Earning/>}/>
+            {/* <Route path={"/report-analytics-earning-report"} element={<Earning/>}/> */}
 
             {/* Orders */}
             <Route path={"/Oders-all"} element={<AllOrder />} />
