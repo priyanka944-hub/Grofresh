@@ -1,0 +1,41 @@
+h5 {
+  padding: 20px;
+}
+.imageone {
+  width: 22px;
+  height: 20px;
+}
+
+.text--primary-2 {
+  color: #24bac3;
+}
+.form-label mb-0 font-semibold {
+  padding: 10px;
+}
+.para5 {
+  font-size: 18px;
+}
+.greencard {
+  background-color: aquamarine;
+  padding: 20px;
+  border-radius: 20px;
+}
+.cards-order {
+  width: 90%;
+  margin: auto;
+}
+.pinkcard {
+  background-color: rgb(255, 232, 252);
+  padding: 20px;
+  border-radius: 20px;
+}
+.lightcard {
+  background-color: rgb(243, 234, 235);
+  padding: 20px;
+  border-radius: 20px;
+}
+.bluecard {
+  background-color: #99c6cd;
+  padding: 20px;
+  border-radius: 20px;
+}
