@@ -1,0 +1,30 @@
+.images {
+  width: 22px;
+  height: 20px;
+}
+.para {
+  color: grey;
+}
+.sales-container {
+  width: 90%;
+}
+
+.sales-card {
+  background-color: rgba(110, 137, 175, 0.0509803922);
+  box-shadow: 1px 1px 5px lightgrey;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 10px;
+}
+.slaes-box {
+  border: 1px solid rgba(231, 234, 243, 0.7);
+  width: 90%;
+  margin: auto;
+  padding: 10px;
+  border-radius: 20px;
+}
+.sales-table-container {
+  width: 100%;
+  margin: auto;
+}

@@ -45,6 +45,8 @@ import Addnewemployee from "./Navigation_page/Pages/User_Management/employees/ad
 import Analyticskeyword from "./Navigation_page/Pages/Report_Analytics/Analytics/keyword_search";
 import Customeranalytics from "./Navigation_page/Pages/Report_Analytics/Analytics/customer_search";
 import NewSale from "./Navigation_page/Pages/POS/new_sale";
+import SaleReportOverview from "./Navigation_page/Pages/Report_Analytics/sales_report";
+import OrderReportOverview from "./Navigation_page/Pages/Report_Analytics/order_report";
 function App() {
   const [inactive, setInactive] = useState(false);
   return (
@@ -85,6 +87,7 @@ function App() {
             <Route path={"/messages"} element={<Messages />} />
 
             {/* Reort and analytics */}
+            <Route path="/sales-report" element={<SaleReportOverview />} />
             <Route
               path={"/analytics-keyword-search"}
               element={<Analyticskeyword />}
@@ -93,6 +96,7 @@ function App() {
               path={"/analytics-customer-search"}
               element={<Customeranalytics />}
             />
+            <Route path="order-report" element={<OrderReportOverview />} />
 
             {/* Categories */}
 
