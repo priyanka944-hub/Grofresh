@@ -38,7 +38,7 @@ export default function ProductAttribute() {
                         <tr>
                             <td>1</td>
                             <td>Size</td>
-                            <td >
+                            <td > 
                                     <button className='icon1'><Pencil/></button> <button className='icon2'><Trash/></button>
                                     </td>
                         </tr>

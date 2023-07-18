@@ -26,7 +26,7 @@ export default function Banner(){
                   <div className='col-12'>
                         <div className='form-group'>
                             <label className='input-label'>Title</label>
-                            <input type="text" className='form-control  m-2' placeholder='New banner'/>
+                            <input type="number" className='form-control  m-2' placeholder='New banner'/>
                         </div>
                     </div>
                     <div className='col-12'>
