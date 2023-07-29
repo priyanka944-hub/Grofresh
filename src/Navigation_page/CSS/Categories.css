@@ -1,9 +1,12 @@
 .categories{
-    width: 85%;
+    width: 100%;
 }
 .categories .row .head{
-    font-size: 24px;
+    font-size: 23px;
    margin-left: 30px;
+}
+.categories .row .head span{
+    margin:5px;
 }
 .categories .row .card .card-body .del .img{
     width: 100px;

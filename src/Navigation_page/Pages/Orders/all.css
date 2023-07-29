@@ -1,14 +1,14 @@
 .all{
     width:100%;
 }
-.head-container{
+.all .head-container{
     display: flex;
     flex-direction: row;
     width: 100%;
     font-family: 'Times New Roman', Times, serif;
 }
 
-.head-container div{
+.all .head-container div{
     margin-left: 10px;
     font-weight: 600;
     font-size: 20px;
@@ -16,24 +16,24 @@
     text-transform: capitalize;
 }
 
-.head-container div img{
+.all .head-container div img{
     width: 20px!important;
     height: 30px;
     object-fit: contain;
     object-position: left center;
     margin-top: -10px;
 }
-.card-cover{
+.all .card-cover{
 margin-top: 50px;
 box-shadow: 0 5px 10px #3342570d;
 border-radius: 10px;
 
 }
-.card-cover-one{
+.all .card-cover-one{
     box-shadow: 5px 0px 10px rgba(51,66,87,.05);   
 }
 
-.card{
+.all .card{
     width:100%;
     box-shadow: 0 5px 10px rgba(51,66,87,.05);
     border-radius: 10px;
@@ -41,7 +41,7 @@ border-radius: 10px;
     
 }
 
-.card-header{
+.all .card-header{
     box-shadow: 0 6px 24px 0 rgba(175, 165, 165, 0.125) !important;
     padding: 15px;
     background-color: white;
@@ -51,16 +51,16 @@ border-radius: 10px;
     border-bottom: none !important;
 }
 
-form{
+.all form{
     font-family: 'Times New Roman', Times, serif;
 }
 
-form .btn-row{
+.all form .btn-row{
     display: flex;
     gap: 10px;
 }
 
-form .btn-row a{
+.all form .btn-row a{
     color: #334257!important;
     background: #f4f5f7!important;
     border-color: #f4f5f7!important;
@@ -74,7 +74,7 @@ form .btn-row a{
     border: 1px solid;
     font-family: open sans,sans-serif;
 }
-form .btn-row button{
+.all form .btn-row button{
     background: #107980;
     border-color: #107980!important;
     border-radius: 5px;
@@ -88,16 +88,16 @@ form .btn-row button{
     font-family: open sans,sans-serif;
 }
 
-.input-date-group {
+.all .input-date-group {
     position: relative;
 }
-.input-date {
+.all .input-date {
     position: relative;
     margin: 0;
     display: block;
     cursor: pointer;
 }
-.input-date-group .input-label {
+.all .input-date-group .input-label {
     position: absolute;
     padding: 0 15px 0 4px;
     background: #fff;
@@ -107,7 +107,7 @@ form .btn-row button{
     font-size: 12px;
 }
 
-.input-date-group .input-date {
+.all .input-date-group .input-date {
     position: relative;
     z-index: 1;
 }
@@ -115,24 +115,24 @@ form .btn-row button{
 flatpickr-custom-form-control[readonly], .form-control[readonly] {
     background-color: transparent;
 }
-.form-control:disabled, .form-control[readonly] {
+.all .form-control:disabled, .form-control[readonly] {
     background-color: #f8fafd;
     opacity: 1;
 }
-.flatpickr-input[readonly] {
+.all .flatpickr-input[readonly] {
     cursor: pointer;
 }
-.min-h-45px {
+.all .min-h-45px {
     min-height: 45px;
 }
-.form-control {
+.all .form-control {
     height: 45px;
 }
-.flatpickr-custom {
+.all .flatpickr-custom {
     position: relative;
     width: 100%!important;
 }
-.form-control {
+.all .form-control {
     display: block;
     width: 100%;
     height: calc(1.6em + 1.21875rem);
@@ -147,36 +147,36 @@ flatpickr-custom-form-control[readonly], .form-control[readonly] {
     border-radius: 0.3125rem;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
-button, input {
+.all button, input {
     overflow: visible;
 }
 
-.min-h-45px {
+.all .min-h-45px {
     min-height: 45px;
 }
-.custom-select {
+.all .custom-select {
     height: 45px;
 }
-.custom-select-sm {
+.all .custom-select-sm {
     border-radius: 0.25rem;
 }
-.custom-control-label, .custom-select {
+.all .custom-control-label, .custom-select {
     cursor: pointer;
 }
-.text-capitalize {
+.all .text-capitalize {
     text-transform: capitalize !important;
 }
-.custom-control-label::before, .custom-file-label, .custom-select {
+.all .custom-control-label::before, .custom-file-label, .custom-select {
     transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
-.custom-select-sm {
+.all .custom-select-sm {
     height: calc(1.5em + 1rem);
     padding-top: 0.4375rem;
     padding-bottom: 0.4375rem;
     padding-left: 0.65625rem;
     font-size: 0.8125rem;
 }
-.custom-select {
+.all .custom-select {
     display: inline-block;
     width: 100%;
     height: calc(1.6em + 1.21875rem);
@@ -193,11 +193,11 @@ button, input {
     -moz-appearance: none;
     appearance: none;
 }
-select {
+.all select {
     word-wrap: normal;
 }
 
-.order--card {
+.all .order--card {
     font-family: 'Times New Roman', Times, serif;
     background: rgba(110,137,175,.0509803922);
     border-radius: 10px;
@@ -208,16 +208,16 @@ select {
     min-height: 65px;
 }
 
-.h-100 {
+.all .h-100 {
     height: 100% !important;
 }
-a {
+.all a {
     color: #01684b;
     text-decoration: none;
     background-color: transparent;
 }
 
-.order--card .card-subtitle {
+.all .order--card .card-subtitle {
     color: var(--title-clr);
     text-transform: capitalize;
     font-weight: 600;
@@ -225,7 +225,7 @@ a {
     line-height: 17px;
 }
 
-.order--card .card-subtitle img {
+.all .order--card .card-subtitle img {
     max-width: 20px;
     max-height: 20px;
     -o-object-fit: contain;
@@ -233,15 +233,15 @@ a {
     margin-right: 10px;
 }
 
-img {
+.all img {
     vertical-align: middle;
     border-style: none;
 }
-.p-20px {
+.all .p-20px {
     padding: 20px!important;
 }
 
-.card-body {
+.all .card-body {
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
     min-height: 1px;
@@ -249,26 +249,26 @@ img {
     font-family: 'Times New Roman', Times, serif;
 }
 
-.order-top {
+.all .order-top {
     padding: 20px 15px;
     background: #fcfcfc;
     border-radius: 5px 5px 0 0;
 }
-.card--header {
+.all .card--header {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
-.card--header form .input-group-append {
+.all .card--header form .input-group-append {
     background: var(--title-3);
     border-color: var(--title-3);
     border-radius: 0 5px 5px 0!important;
     height: 40px;
 }
 
-.input-group {
+.all .input-group {
     position: relative;
     display: -ms-flexbox;
     display: flex;
@@ -279,15 +279,15 @@ img {
     width: 100%;
 }
 
-.input-group .input-group-append, .input-group .input-group-prepend {
+.all .input-group .input-group-append, .input-group .input-group-prepend {
     z-index: 4;
 }
 
-.input-group-append {
+.all .input-group-append {
     margin-left: -0.0625rem;
 }
 
-.input-group > .custom-file, .input-group > .custom-select, .input-group > .form-control, .input-group > .form-control-plaintext {
+.all .input-group > .custom-file, .input-group > .custom-select, .input-group > .form-control, .input-group > .form-control-plaintext {
     position: relative;
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
@@ -295,7 +295,7 @@ img {
     min-width: 0;
     margin-bottom: 0;
 }
-.form-control {
+.all .form-control {
     display: block;
     width: 100%;
     height: calc(1.6em + 1.21875rem);
@@ -315,67 +315,67 @@ img {
    
 }
 
-thead {
+.all thead {
     display: table-header-group;
     vertical-align: middle;
     border-color: inherit;
 }
-.table {
+.all .table {
     width: 100%;
     margin-bottom: 1rem;
     color: #677788;
 }
-table {
+.all table {
     border-collapse: collapse;
 }
 
 
-table {
+.all table {
     border-collapse: separate;
     text-indent: initial;
     border-spacing: 2px;
 }
 
-.table .thead-light th {
+.all .table .thead-light th {
     background: rgba(0,197,210,.05);
     border-color: rgba(0,197,210,.05);
     padding: 0.932rem 1.3125rem;
     color: #4b5460;
 }
 
-tbody {
+.all tbody {
     display: table-row-group;
     vertical-align: middle;
     border-color: inherit;
 }
 
-.table-align-middle tbody td {
+.all .table-align-middle tbody td {
     vertical-align: middle;
 }
 
-.table-align-middle td {
+.all .table-align-middle td {
     vertical-align: middle;
 }
-.table td {
+.all .table td {
     padding: 0.932rem 1.3125rem;
 }
-.table-nowrap td, .table-nowrap th {
+.all .table-nowrap td, .table-nowrap th {
     white-space: nowrap;
 }
-.table .badge {
+.all .table .badge {
     padding: 8px 8px 6px!important;
     min-width: 72px;
 }
 
-.badge-soft-primary {
+.all .badge-soft-primary {
     background: rgba(0,197,210,.05);
     color: #107980;
 }
-.badge-soft-primary {
+.all .badge-soft-primary {
     color: #01684b;
     background-color: rgba(55,125,255,.1);
 }
-.badge {
+.all .badge {
     display: inline-block;
     padding: 0.3125em 0.5em;
     font-size: 0.75rem;
@@ -387,55 +387,55 @@ tbody {
     border-radius: 0.3125rem;
     transition: all 0.2s ease-in-out;
 }
-label {
+.all label {
     display: inline-block;
     margin-bottom: 0.5rem;
 }
 
 
-.badge-soft-info {
+.all .badge-soft-info {
     color: #00c9db;
     background-color: rgba(0,201,219,.1);
 }
 
 
-.badge-soft-success {
+.all .badge-soft-success {
     color: #00c9a7;
     background-color: rgba(0,201,167,.1);
 }
-.mw-90 {
+.all .mw-90 {
     max-width: 90px;
     text-align: right;
 }
-.table-align-middle tbody td {
+.all .table-align-middle tbody td {
     vertical-align: middle;
 }
 
-.card--header form .input-group-append {
+.all .card--header form .input-group-append {
     background: var(--title-3);
     border-color: var(--title-3);
     border-radius: 0 5px 5px 0!important;
     height: 40px;
 }
-.input-group .input-group-append, .input-group .input-group-prepend {
+.all .input-group .input-group-append, .input-group .input-group-prepend {
     z-index: 4;
 }
-.input-group-append {
+.all .input-group-append {
     margin-left: -0.0625rem;
     height: 100%;
 }
-.input-group{
+.all .input-group{
     position: relative;
     width: 100%;
     border: none !important;
 }
 
-.search_form{
+.all .search_form{
     border: 1px solid grey;
     border-radius: 5px;
 }
 
-.input-group-text {
+.all .input-group-text {
     display: flex;
     align-items: center;
     padding: 0.375rem 0.75rem;
@@ -450,17 +450,17 @@ label {
     /* border-radius: var(--bs-border-radius); */
 }
 
-.hs-unfold{
+.all .hs-unfold{
     border: 2px solid rgb(84, 176, 176);
     padding: 5px 10px;
     border-radius: 5px;
 }
-.hs-unfold:hover{
+.all .hs-unfold:hover{
     background-color: rgb(84, 176, 176);
 }
 
 
- .card-body{    
+.all  .card-body{    
     border: 1px solid white; 
      
       
@@ -478,54 +478,54 @@ label {
       }
 }
 
-.card-footer:last-child {
+.all .card-footer:last-child {
     border-radius: 0 0 0.6875rem 0.6875rem;
 }
-.card-footer {
+.all .card-footer {
     display: block;
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
-.border-0 {
+.all .border-0 {
     border: 0 !important;
 }
-.card-footer {
+.all .card-footer {
     padding: 1.3125rem 1.3125rem;
     background-color: #fff;
     border-top: 0.0625rem solid rgba(231, 234, 243, 0.7);
 }
 
-.pagination {
+.all .pagination {
     flex-wrap: wrap;
     justify-content: flex-end;
 }
-.pagination {
+.all .pagination {
     display: -ms-flexbox;
     display: flex;
     padding-left: 0;
     list-style: none;
     border-radius: 0.3125rem;
 }
-.page-item .page-link {
+.all .page-item .page-link {
     border-top-right-radius: 0.3125rem;
     border-bottom-right-radius: 0.3125rem;
 }
-.page-item .page-link {
+.all .page-item .page-link {
     border-top-left-radius: 0.3125rem;
     border-bottom-left-radius: 0.3125rem;
     background-color: rgb(44, 127, 115);
     color:white;
 }
-.page-item{
+.all .page-item{
     padding-left: 10px;
 }
-.page-link {
+.all .page-link {
     cursor: pointer;
     text-align: center;
     min-width: 2.25rem;
     padding-left: 10px;
 }
-.page-link {
+.all .page-link {
     position: relative;
     display: block;
     padding: 0.5rem 0.75rem;
@@ -535,12 +535,12 @@ label {
     background-color: #fff;
     border: 0 solid #e7eaf3;
 }
- .page-link a:hover {
+.all  .page-link a:hover {
     color: #d8e6e2;
     text-decoration: none;
     background-color: transparent;
 }
-.action-btn{
+.all .action-btn{
     margin:5px;
     outline: 1px solid rgb(34, 126, 142);
     padding: 5px;

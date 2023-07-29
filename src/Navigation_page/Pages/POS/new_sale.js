@@ -138,7 +138,7 @@ export default function NewSale() {
   }, []);
 
   return (
-    <div className="d-flex justify-content-center p-4 gap-2">
+    <div className="new_sale_container d-flex justify-content-center p-4 gap-2">
       <div className="newsale-left-box">
         <h5>
           <strong>Product Section</strong>

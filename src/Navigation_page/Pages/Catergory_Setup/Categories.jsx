@@ -1,7 +1,7 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
-import {  MenuApp, Pencil, Search, Trash } from 'react-bootstrap-icons';
+import { Pencil, Search, Trash } from 'react-bootstrap-icons';
 import del from '..//../../assest/del.png'
 import cat1 from '..//../../assest/cat1.png'
 import '../../CSS/Categories.css'
@@ -10,10 +10,15 @@ export default function Categories() {
    <>
       
 
-            <div className=' categories col-md-11'>
+            <div className='categories col-md-11'>
 
                 <div className='row'>
-                    <h1 className='col-3 fs-7 head'><span><MenuApp/></span><span>Category Setup</span></h1>
+                    <h2 className='col-3 fs-7 head'>
+                        <span>
+                            <img src="https://grofresh-admin.6amtech.com/public/assets/admin/img/category.png" alt="icon image"/>
+                        </span>
+                        <span>Category Setup</span>
+                    </h2>
                 </div>
            
             <div className='row'>

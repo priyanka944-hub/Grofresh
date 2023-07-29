@@ -1,4 +1,4 @@
-.header{
+.main-header-part .header{
     width:100%;
     height:60px;
     top:0;
@@ -15,48 +15,48 @@
     top: 0;
 }
 
-a{
+.main-header-part a{
     text-decoration: none;
     color:#677788;
 }
 
-.header_center{
+.main-header-part .header_center{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-right: 50px ;
 }
 
-.header_list{
+.main-header-part .header_list{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.header_list >li{
+.main-header-part .header_list >li{
     list-style: none;
     padding:20px;
 }
 
-.header_list>li>a{
+.main-header-part .header_list>li>a{
     text-decoration: none;
     display: flex;
     flex-direction: row;
 }
 
-.header_centerMenu{
+.main-header-part .header_centerMenu{
     width:100%;
     height: 100%;
 }
 
-.header_centerMenu > button{
+.main-header-part .header_centerMenu > button{
     border: none;
     background-color: white;
     margin-top: 10px;
     height: 50px;
 }
 
-.dropDown_header{
+.main-header-part .dropDown_header{
     display: none;
     position: absolute;
     min-width: 150px;
@@ -67,16 +67,16 @@ a{
     border-radius: 10px;
 }
 
-.header_centerMenu .dropDown_header.active{
+.main-header-part .header_centerMenu .dropDown_header.active{
  display: block;
 }
 
-.en_language{
+.main-header-part .en_language{
     display: flex;
     flex-direction: row;
 }
 
-.en_language>a>span{
+.main-header-part .en_language>a>span{
     width:22px;
   height: 22px;
   font-size: 15px;
@@ -85,15 +85,12 @@ a{
   
 }
 
-.en_language>a>img{
+.main-header-part .en_language>a>img{
     width:22px;
     height:22px;
     margin-right: 10px;
 }
 
-.en_language>a>.arrow{
-
-}
 
 .header_list>.msg>a >sup , .header_list>.cart>a >sup{
     background-color:#FF6767;
@@ -127,24 +124,24 @@ a{
     letter-spacing: 1px;
 }
 
-.admin_login_details{
+.main-header-part .admin_login_details{
     margin-top: -20px ;
     color: #677788;
     font-weight: 900;
     font-family: 'Times New Roman', Times, serif;
   }
-  .profile{
+  .main-header-part .profile{
     border-radius: 50%;
     width: 2.1875rem;
     height: 2.1875rem;
     margin-top:2px;
   }
 
-  .profile-inner{
+  .main-header-part .profile-inner{
     position: relative;
   }
 
-  .profile-inner sub{ 
+  .main-header-part .profile-inner sub{ 
     background-color: #00C9A7;
     color:  #00C9A7;
     position: absolute;
@@ -157,7 +154,7 @@ a{
     border: 2px solid white;
 }
 
-.dropDown_header{
+.main-header-part .dropDown_header{
     padding: 20px;
 }
 

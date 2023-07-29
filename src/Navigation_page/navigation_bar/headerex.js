@@ -11,7 +11,7 @@ const Headerex = () => {
 
   return (
 
-    <div>
+    <div className='main-header-part'>
     <div className='header'>
       
      <div className='header_center'>

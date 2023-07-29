@@ -9,7 +9,7 @@ export default function ProductAttribute() {
   return (
     <>
     <div className='Productattribute'>
-        <div className='header'>
+        <div className='header-pro'>
             <h1 className='title'><span><img src={pro1} alt="logo1" /></span> <span>Attribute Setup</span></h1>
         </div>
         <div className='card'>
