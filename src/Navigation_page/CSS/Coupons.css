@@ -1,0 +1,66 @@
+.Coupons{
+    width: 80%;
+}
+
+.Coupons .page-header .page-title{
+    text-align: left;
+    font-size: 24px;
+    margin: 10px 20px;
+}
+.Coupons .coupons{
+    margin-right: 10px;
+}
+.Coupons .card{
+    margin: 10px;
+}
+.Coupons .card .card-body form{
+    text-align: left;
+}
+
+.Coupons .card .card-body form label{
+    margin: 20px 0 6px 0;
+}
+.Coupons .card .card-body form .form-group a{
+    text-decoration: none;
+    color: green;
+}
+.Coupons .card .card-body form .form-group a:hover{
+    color: blue;
+}
+.Coupons .card .card-body .d-flex .btn{
+    margin-left: 15px;
+    padding: 10px;
+    width: 100px;
+}
+.Coupons .card .card-body .d-flex .btn-reset{
+    background-color: rgb(246, 246, 246);
+}
+.Coupons .card .card-body .d-flex .btn-reset:hover{
+    background-color: gray;
+}
+.Coupons .card .card-body .d-flex .btn-submit{
+    background-color: rgb(3, 79, 79);
+    color: aliceblue;
+}
+.Coupons .card .card-body .d-flex .btn-submit:hover{
+    background-color: rgb(10, 130, 130);
+}
+.Coupons .card .card-header{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    margin: 20px 30px;
+}
+.Coupons .card .card-header .badge{
+    background-color: rgb(126, 136, 136);
+    font-size: 10px;
+    margin-left: 5px;
+}
+.Coupons .card .card-header .input-group-append .input-group-text{
+    background-color: rgb(4, 80, 80);
+    color: white;
+}
+.Coupons .card .thead{
+    background-color: rgb(219, 244, 244);
+    height: 70px;
+}

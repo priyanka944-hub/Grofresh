@@ -1,0 +1,73 @@
+.Expense .page-header .page-title{
+    text-align: left;
+    font-size: 30px;
+}
+.Expense .expen{
+    width: 30px;
+}
+.Expense .card .card-body{
+    display: flex;   
+}
+.Expense .card{
+   padding: 10px; 
+}
+.Expense .card .card-body .clear{
+    background-color: gainsboro;
+    width: 200px;
+    padding: 10px;
+}
+.Expense .card .card-body .clear:hover{
+    background-color: rgb(119, 119, 119);   
+}
+.Expense .card  .show{
+    background-color: rgb(21, 103, 118);
+    width: 200px;
+    color: white;
+    margin-left: 20px;
+}
+.Expense .card .show:hover{
+    background-color: rgb(26, 160, 184);
+}
+.Expense .row .col-md-4{
+    text-align: left;
+    
+}
+.Expense .row .col-md-4 .shadow{
+    margin: 20px;
+    height: 130px;
+}
+.Expense .row .graph{
+    margin: 20px;
+}
+.Expense .trans .card-header{
+    text-align: left;
+    background-color: white;
+}
+.Expense .trans .card-header .badge{
+    background-color: gray;
+    font-size: 10px;
+    margin-left: 3px;
+}
+.Expense .trans .card-header .exp{
+    background-color: white;
+    border: 2px solid skyblue;
+    color: skyblue;
+    width: 100px;
+    height: 40px;   
+}
+.Expense .trans .card-header .input-group .input-group-text{
+
+    background-color: rgb(6, 101, 101);
+    color: white;
+}
+.Expense .trans .card-body .table .exphead{
+    background-color: rgb(214, 237, 251);
+    height: 70px;
+}
+.Expense .trans .card-body .table td{
+    height: 70px;
+}
+.Expense .trans .card-body .table .orange{
+    width: 200px;
+    color: orange;
+}

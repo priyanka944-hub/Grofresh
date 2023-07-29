@@ -1,0 +1,143 @@
+.Employerolesetup{
+    width: 80%;
+}
+.Employerolesetup .page-header .page-title{
+    text-align: left;
+    font-size: 24px;
+    margin: 20px 30px;
+  
+}
+.Employerolesetup .page-header .page-title .logo{
+    width: 30px;
+    margin-right: 5px;
+}
+.Employerolesetup .card .card-body .form-group{
+    text-align: left;
+}
+.Employerolesetup .card .card-body .form-group .form-lable{
+    margin-bottom: 10px;
+}
+.Employerolesetup .card .card-body .form-group .text{
+    width: 400px;
+    padding: 10px;
+}
+.Employerolesetup .card .card-body .d-flex{
+    margin: 20px 0;
+}
+.Employerolesetup .card .card-body .check-item label,input{
+    margin-left: 10px;
+   
+}
+.Employerolesetup .card .card-body .d-flex .head5{
+    font-size: 15px;
+    margin-top: 3px;
+}
+.Employerolesetup .card .card-body .management{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    row-gap: 30px;
+}
+.Employerolesetup .card .card-body .col-12{
+    display: flex;
+    justify-content: end;
+    margin-right: 20px;
+}
+.Employerolesetup .card .card-body .col-12 .btn--reset{
+
+    background-color: rgb(250, 250, 255);
+    padding: 10px;
+    width: 100px;
+    margin-right: 10px
+}
+
+.Employerolesetup .card .card-body .col-12 .btn--reset:hover{
+    background-color: gainsboro;
+}
+.Employerolesetup .card .card-body .col-12 .btn--submit{
+
+    background-color: rgb(9, 137, 128);
+    padding: 10px;
+    width: 100px;
+    color: white;
+}
+.Employerolesetup .card .card-body .col-12 .btn--submit:hover{
+    background-color: rgb(13, 91, 83);
+}
+.Employerolesetup .card{
+    margin: 30px;
+}
+.Employerolesetup .card .card-title{
+    text-align: left;
+}
+.Employerolesetup .card .card-title .badge{
+    background-color: rgb(184, 225, 241);
+    margin-left: 4px;
+    font-size: 10px;
+    color: black;
+}
+.Employerolesetup .card .card-header{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    margin: 20px 0px;
+}
+.Employerolesetup  .card .card-header .input-group .form-control{
+    width: 350px;
+}
+.Employerolesetup  .card .card-header .form2{
+    display: flex;
+}
+.Employerolesetup  .card .card-header .input-group{
+    margin:0 30px;
+}
+.Employerolesetup  .card .card-header .bts1{
+    border: none;
+    background-color: rgb(4, 93, 78);
+    color: white;
+    border-radius: 5px;
+}
+.Employerolesetup  .card .card-header .bts{
+    width: 150px;
+    border: 1px solid skyblue;
+    color: skyblue;
+    background-color: white;
+}
+.Employerolesetup  .card .card-header  .bts:hover{
+    color: white;
+    background-color: skyblue;
+}
+
+.Employerolesetup  .card .card-body .table-responsive .table .thead{
+    background-color: rgb(200, 236, 245);
+    height: 70px;
+}
+.Employerolesetup  .card .card-body .table-responsive .table .form-check .form-check-input{
+    position: relative;
+    left: 110px;
+} 
+.Employerolesetup  .card .card-body .table-responsive .table  .icon1{
+    border: 2px solid  skyblue;
+    margin: 2px;
+    border-radius: 5px;
+    padding: 3px;
+    background-color:  white;
+}
+.Employerolesetup  .card .card-body .table-responsive .table  .icon2{
+    border: 2px solid  red;
+    margin: 2px;
+    color: red;
+    border-radius: 5px;
+    padding: 3px;
+    background-color:  white;
+}
+.Employerolesetup  .card .card-body .table-responsive .table .icon1:hover{
+    background-color:skyblue ;
+    color: aliceblue;
+}
+.Employerolesetup  .card .card-body .table-responsive .table .icon2:hover{
+    background-color:red ;
+    color: aliceblue;
+}
+.Employerolesetup  .card .card-body .table-responsive .table td{
+    height: 100px;
+}

@@ -1,0 +1,45 @@
+.container.icon{
+    margin-top: 5px;
+}
+.container.h3{
+    display: flex;
+    flex-direction: row;
+    background-color: #FFFFFF;
+}
+.initial-24 {
+    height: 137px;
+    width: 137px;
+    border: 1px solid rgb(153, 167, 186);
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.container .card .p{
+    margin-left: 200px;
+}
+
+/* .div{
+    height: 400px;
+    overflow-x: scroll;
+} */
+.container .button .reset{
+    background-color:#DCDCDE;
+     border:none;
+      width:100px;
+       height:40px
+}
+.container .reset:hover{
+    background-color:#F4F5F7;
+}
+.container .button .submit{
+    background-color:#107980;
+    border: none;
+    width: 100px;
+    height: 40px;
+}
+ .container .submit:hover{
+    background-color: #0B5E65;
+}
+
+

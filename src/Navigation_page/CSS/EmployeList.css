@@ -1,0 +1,88 @@
+.Employeelist .page-header .page-title{
+    text-align: left;
+    margin: 10px 20px;
+    font-size: 24px;
+}
+.Employeelist .page-header .employe{
+    width: 30px;
+    margin-right:10px ;
+}
+.Employeelist .page-header .badge{
+    background-color: rgb(174, 227, 250);
+    font-size: 10px;
+    color:black;
+    margin-left: 5px;
+}
+.Employeelist .card{
+    margin: 20px 10px;
+}
+.Employeelist .card .card-header{
+    background-color: white;
+    margin: 10px 20px;
+}
+.Employeelist .card .card--header {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Employeelist .card .card--header .input-group .input{
+    width: 400px;
+}
+.Employeelist .card .card--header .input-group-append .search{
+    background-color: rgb(2, 78, 78);
+    color: white;
+}
+.Employeelist .card .card--header .dropdown a{
+    margin-left: 5px;
+}   
+.Employeelist .card .card-body .table-responsive .table .person{
+    width: 70px;
+    border-radius: 50px;
+}
+.Employeelist .card .card-body .table-responsive .table .thead{
+    background-color: rgb(216, 244, 244);
+    height: 70px;
+}
+.Employeelist .card .card-body .table-responsive .table td{
+    height: 100px;
+}
+.Employeelist .card .card-body .table-responsive .table tr a{
+    text-decoration: none;
+    color: black;
+}
+.Employeelist .card .card-body .table-responsive .table tr a:hover{
+    color: rgb(20, 149, 154);
+}
+.Employeelist .card .card-body .table-responsive .table .text-center{
+    position: relative;
+    left: 60px;
+    
+    
+}
+.Employeelist .card .card-body .table-responsive .table .icon1{
+    border: 2px solid  skyblue;
+    color:skyblue;
+    margin: 2px;
+    border-radius: 5px;
+    padding: 3px;
+    background-color:  white;
+}
+.Employeelist .card .card-body .table-responsive .table .icon2{
+    border: 2px solid  red;
+    color:red;
+    margin: 2px;
+    border-radius: 5px;
+    padding: 3px;
+    background-color:  white;
+}
+.Employeelist .card .card-body .table-responsive .table .icon1:hover{
+    background-color:skyblue ;
+    color: aliceblue;
+}
+.Employeelist .card .card-body .table-responsive .table .icon2:hover{
+    background-color:red ;
+    color: aliceblue;
+} 

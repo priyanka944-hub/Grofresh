@@ -1,0 +1,52 @@
+
+.container .h3{
+    display: flex;
+    flex-direction: row;
+    background-color: #FFFFFF;
+}
+ .container .h3 .icon{
+    margin-top: 5px;
+}
+.container .card .button .reset{
+    background-color:#F4F5F7;
+     border:none;
+      width:100px;
+       height:40px
+}
+.container .card .reset:hover{
+    background-color: #DCDCDE;
+}
+.container .card .button .submit{
+    background-color:#107980;
+    border: none;
+    width: 100px;
+    height: 40px;
+}
+.container .card .submit:hover{
+    background-color: #0B5E65;
+}
+tr .status{
+    background-color: blue;
+}
+.container .card-body .table .top{
+    margin-top: 10px;
+}
+.container .card .card-header.badge{
+    background-color: #F1F3F5;
+    height:30px;
+    width:50px;
+} .container .card .card-body .label{
+    border: 2px dashed;
+} .container .card .card-header .search{
+    width: 80px;
+    height: 29px;
+    background-color: #107980;
+    border: none;
+} .container .card .card-header .div{
+    display: flex;
+    flex-direction: row;
+}
+.container .card .card-header .header{
+    background-color: #FFFFFF;
+}
+

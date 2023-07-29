@@ -1,0 +1,25 @@
+.container .icon{
+    margin-top: 4px;
+}
+.container .h5{
+    padding: 10px;
+
+}
+.container .today{
+    margin-left: 500px;
+}
+
+.container .option{
+    margin-left: 350px;
+}
+.container .div{
+    border: none;
+}
+
+.container .card .search-volume{
+    width:fit-content;
+    height: fit-content;
+    padding: 10px 10px 10px 10px;
+    background-color: #F9FAFC;
+    margin-left: 10px ;
+}

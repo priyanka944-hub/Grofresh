@@ -1,0 +1,71 @@
+.Productattribute{
+    width: 80%;
+}
+.Productattribute .header .title{
+    text-align: left;
+    font-size: 24px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.Productattribute .card .card-header{
+    background-color: white;
+}
+.Productattribute .card .card-header .card--header {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+.Productattribute .card .card-header .card-title .badge{
+    color: black;
+    font-size: 10px;
+    background-color: rgb(199, 199, 199);
+}
+.Productattribute .card .card-header .input-group .input-group-append .input-group-text{
+
+    background-color: rgb(10, 109, 92);
+    color: white;
+
+}
+.Productattribute .card .card-header .input-group .btn{
+    background-color:rgb(10, 109, 92);
+    color: white;
+    border-radius: 5px;
+    
+}
+.Productattribute .card .card-header .input-group .btn:hover{
+    background-color:rgb(68, 133, 122) ;
+    color: white;
+  
+}
+.Productattribute .card .table-responsive .table .prod-head{
+    background-color: rgb(208, 246, 233);
+    height: 70px;
+}
+.Productattribute .card .table-responsive .table .icon1{
+    border: 2px solid  skyblue;
+    color:skyblue;
+    margin: 2px;
+    border-radius: 5px;
+    padding: 3px;
+    background-color:  white;
+}
+.Productattribute .card .table-responsive .table .icon2{
+    border: 2px solid  red;
+    color:red;
+    margin: 2px;
+    border-radius: 5px;
+    padding: 3px;
+    background-color:  white;
+}
+.Productattribute .card .table-responsive .table .icon1:hover{
+    background-color:skyblue ;
+    color: aliceblue;
+}
+.Productattribute .card .table-responsive .table .icon2:hover{
+    background-color:red ;
+    color: aliceblue;
+}

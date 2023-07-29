@@ -1,0 +1,112 @@
+.Productlist{
+    width: 80%;
+}
+.Productlist .page-header .page-title{
+    text-align: left;
+    margin-left: 30px;
+}
+.Productlist .page-header .page-title .badge{
+    background-color: rgb(250, 246, 246);
+    font-size: 10px;
+    color: black;
+}
+/* .Productlist .card .card-header .card--header .input-group{
+    position: relative;
+    display: flex;
+} */
+.Productlist .card .card-header{
+    width: 100%;
+    display: flex;
+    /* flex-wrap: wrap;
+    align-items: center; */
+   
+}
+.Productlist .card .card-header .dropdown{
+    width: 70%;
+}
+
+.Productlist .card .card-header .card--header .input-group .search{
+    background-color: rgb(22, 89, 90);
+    color: aliceblue;
+    width: 90px;
+}
+.Productlist .card .card-header .ex{
+    border: 1px solid rgb(114, 244, 251);
+    color:rgb(114, 244, 251); 
+}
+.Productlist .card .card-header .ex:hover{
+    background-color:rgb(114, 244, 251);  
+    color: white;
+}
+.Productlist .card .card-header .btn1{
+    background-color:rgb(44, 238, 248);  
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.Productlist .card .card-header .btn1:hover{
+    background-color: white;
+    color:rgb(12, 109, 114); 
+}
+.Productlist .card .card-header .btn2{
+    background-color:rgb(12, 109, 114);  
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.Productlist .card .card-header .btn2:hover{
+    background-color:rgb(26, 125, 130);
+    color:white; 
+}
+.Productlist .col-12 .table-responsive .table tr {
+    text-align: left;
+}
+.Productlist .col-12 .table-responsive .table .proli-head{
+    background-color: rgb(217, 241, 250);
+    height: 70px;
+}
+.Productlist .col-12 .table-responsive .table .img{
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    border: 2px solid rgb(246, 244, 244);
+
+}
+.Productlist .col-12 .table-responsive .table .form-check  .input1{
+    position: relative;
+    left: 90px;
+} 
+.Productlist .col-12 .table-responsive .table .form-check .input2{
+    position: relative;
+    left: 20px;
+} 
+.Productlist .col-12 .table-responsive .table .form-check .input3{
+    position: relative;
+    left: 20px;
+} 
+.Productlist .col-12 .table-responsive .table .icon1{
+    border: 2px solid  skyblue;
+    color:skyblue;
+    margin: 2px;
+    border-radius: 5px;
+    padding: 3px;
+    background-color:  white;
+}
+.Productlist .col-12 .table-responsive .table .icon2{
+    border: 2px solid  red;
+    color:red;
+    margin: 2px;
+    border-radius: 5px;
+    padding: 3px;
+    background-color:  white;
+}
+.Productlist .col-12 .table-responsive .table .icon1:hover{
+    background-color:skyblue ;
+    color: aliceblue;
+}
+.Productlist .col-12 .table-responsive .table .icon2:hover{
+    background-color:red ;
+    color: aliceblue;
+} 

@@ -1,0 +1,65 @@
+.Productreview .page-header .page-title{
+    text-align: left;
+    font-size: 20px;
+    margin: 20px 0px;
+}
+.Productreview .page-header .page-title .logo{
+    width: 35px;
+}
+.Productreview .page-header .page-title .badge{
+    background-color: rgb(248, 246, 246);
+    color: black;
+    font-size: 10px;
+    margin-left: 3px;
+}
+.Productreview .card .card-header{
+    background-color: white;
+    margin: 20px 0px;
+}
+.Productreview .card .card-header .card--header{
+    display: flex;
+}
+.Productreview .card .card-header .card--header .input-group{
+    width: 400px;
+}
+.Productreview .card .card-header .card--header .input-group .input-group-append .input-group-text{
+    background-color: rgb(12, 124, 126);
+    color: white;
+} 
+.Productreview .card .table-responsive .table{
+    text-align: left;
+}
+.Productreview .card .table-responsive .table td{
+    height: 100px;
+}
+.Productreview .card .table-responsive .table .prod-head{
+    background-color:  rgb(238, 250, 254);
+    height: 70px;
+}
+.Productreview .card .table-responsive .table .img{
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid rgb(201, 201, 201);
+    margin-right: 10px;
+ }
+ .Productreview .card .table-responsive .table  .rate{
+    color: skyblue;
+    margin: 2px;
+    
+ }
+ .Productreview .card .table-responsive .table  a{
+    text-decoration: none;
+    color:black;
+ }
+ .Productreview .card .table-responsive .table a:hover{
+    color: blue;
+ }
+ .Productreview .card .table-responsive .table .form-check .form-check-input{
+    position: relative;
+    left: 50px;
+    color: rgb(3, 57, 57);
+    padding: 10px;
+}
+
+
+ 

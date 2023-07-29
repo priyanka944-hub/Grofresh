@@ -1,0 +1,66 @@
+
+.Earning .page-header .page-title{
+    text-align: left;
+    font-size: 24px;
+}
+.Earning .earn{
+    width: 30px;
+   
+}
+.Earning .page-header .anch{
+    text-align: left;
+    margin: 0px 30px;
+}
+.Earning .page-header .anch span{
+    margin-right:20px;
+}
+.Earning .card{
+    text-align: left;
+    margin-top: 15px;
+}
+.Earning .card-header{
+    background-color: white;
+    margin-top: 10px;
+}
+.Earning .card .row .col-md-4 .show{
+    background-color: rgb(17, 123, 123);
+    width: 400px;
+    color: white;
+    margin-top: 20px;
+    height: 50px;
+}
+.Earning .card .card-body .row .col-md-5{
+    margin-left:  50px;
+}
+.Earning .card .card-body .row  .green{
+    margin-top: 20px;
+    background-color: rgb(228, 250, 248);
+    border-radius: 5px;
+    height: 140px;
+    /* width: 800px; */
+  
+}
+.Earning .card .card-body .row  .red{
+    margin-top: 20px;
+    background-color:rgb(251, 234, 234);
+    border-radius: 5px;
+    height: 140px;
+    /* width: 800px; */
+  
+}
+.Earning .card .card-body .row  .orange{
+    margin-top: 20px;
+    background-color: rgb(254, 239, 233);
+    border-radius: 5px;
+    height: 140px;
+    /* width: 800px; */
+  
+}
+.Earning .card .card-body .row  .blue{
+    margin-top: 20px;
+    background-color:rgb(232, 244, 250);
+    border-radius: 5px;
+    height: 140px;
+    /* width: 800px; */
+  
+}

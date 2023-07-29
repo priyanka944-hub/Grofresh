@@ -1,0 +1,104 @@
+.Banner .page-header .page-title{
+    margin: 20px 30px;
+    text-align: left;
+    font-size: 20px;
+} 
+.Banner .page-header .logo{
+    width: 20px;
+    margin-right: 5px;   
+}
+ .Banner .card .card-body .row .col-6 .form-row{
+    text-align: left;
+    margin-top: 10px;
+ }
+ .Banner .card .card-body .row .col-6 .form-row .col-12{
+    margin-bottom: 10px;
+ }
+ .Banner .card .card-body .row .col-6 h5{
+    font-size: 20px;
+ }
+ .Banner .card .card-body .row .col-6 .upload{
+    margin-top: 20px;
+   width: 500px;
+   border: 2px dashed rgb(212, 212, 212);
+   border-radius: 5px;
+ }
+ .Banner .card .card-body .row .col-12 button{
+    margin-left: 15px;
+    width: 100px;
+ }
+ .Banner .card .card-body .row .d-flex .reset{
+    background-color: rgb(241, 241, 241);
+ }
+ .Banner .card .card-body .row .d-flex .reset:hover{
+    background-color: gray;
+ }
+ .Banner .card .card-body .row .d-flex .submit{
+    background-color: rgb(7, 85, 88);
+    color: white;
+ }
+
+ .Banner .card .card-body .row .d-flex .submit:hover{
+    background-color: rgb(21, 155, 159) ;
+ }
+ .Banner .card-header{
+   background-color: white;
+   margin: 10px 20px;
+ }
+ .Banner .card-header .card--header{ 
+    display: flex;
+    justify-content: space-between;
+ }
+ .Banner .card-header .card--header .badge{
+    background-color: rgb(219, 219, 222);
+    color: gray;
+    font-size: 10px;
+ }
+ .Banner .card-header .card--header .input-group .form-control{
+    width: 300px;
+}
+.Banner .card-header .card--header .input-group .input-group-text{
+    background-color:  rgb(7, 85, 88);
+    color: white;
+}
+ .Banner .table-responsive .table .thead{
+
+        background-color: rgb(230, 243, 248);
+        height: 70px;
+}
+
+.Banner .table-responsive .table .banner{
+    width: 200px;
+    border-radius: 15px;
+}
+.Banner .table-responsive .table .icon1{
+    border: 2px solid  skyblue;
+    margin: 2px;
+    color: skyblue;
+    border-radius: 5px;
+    padding: 3px;
+    background-color:  white;
+}
+.Banner .table-responsive .table .icon2{
+    border: 2px solid  red;
+    margin: 2px;
+    color: red;
+    border-radius: 5px;
+    padding: 3px;
+    background-color:  white;
+}
+.Banner .table-responsive .table .icon1:hover{
+    background-color:skyblue ;
+    color: aliceblue;
+}
+.Banner .table-responsive .table .icon2:hover{
+    background-color:red ;
+    color: aliceblue;
+}
+.Banner .table-responsive .table .icon{
+   border: none;
+}
+.Banner .table-responsive .table .form-check-input{
+   position: relative;
+   left: 20px;
+}

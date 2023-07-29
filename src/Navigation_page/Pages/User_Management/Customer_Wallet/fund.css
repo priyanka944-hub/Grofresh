@@ -1,0 +1,35 @@
+
+.container .heading-icon{
+    display: flex;
+    flex-direction: row;
+}
+.inner-container .inner-heading .row .customer{
+    max-width: 100px;
+}
+
+.inner-container .inner-heading .gap{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.inner-container .inner-heading .space{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.container .inner-container .inner-heading .button .Reset{
+    background-color:#71869D;
+     border:none;
+      width:100px;
+       height:40px
+}
+.container .inner-container .inner-heading .Reset:hover{
+    background-color:#363636;
+}
+.container .inner-container .inner-heading .button .Submit{
+    background-color:#107980;
+    border: none;
+    width: 100px;
+    height: 40px;
+}
+.container .inner-container .inner-heading .Submit:hover{
+    background-color: #0B5E65;
+}

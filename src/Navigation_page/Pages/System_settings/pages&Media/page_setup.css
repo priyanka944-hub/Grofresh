@@ -1,0 +1,12 @@
+.font {
+    background-color: aliceblue;
+  }
+  .font > .card-full {
+    display: block;
+    width: 100%;
+    color: black;
+    font-size: 15px;
+    font-family: sans-serif;
+    white-space: nowrap;
+  }
+  
