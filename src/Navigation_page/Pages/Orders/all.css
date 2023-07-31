@@ -546,3 +546,6 @@ flatpickr-custom-form-control[readonly], .form-control[readonly] {
     padding: 5px;
     border-radius: 5px;
 }
+.all .card--header .input-group-append .input-group-text{
+    background-color: rgb(5,112,112);
+}
