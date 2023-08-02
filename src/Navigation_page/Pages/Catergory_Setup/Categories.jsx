@@ -9,9 +9,10 @@ import cat5 from '..//../../assest/cat5.png'
 import cat6 from '..//../../assest/cat6.png'
 import cat7 from '..//../../assest/cat7.png'
 import '../../CSS/Categories.css'
+import PopUp from './PopUp';
 export default function Categories() {
 
-    const tableData=[
+    const tableDatas=[
         {id:1, img:cat1, name:"Breakfast",status:"",icon1:<Pencil/>,icon2:<Trash/>},
         {id:2, img:cat4, name:"Home Applainces",status:"",icon1:<Pencil/>,icon2:<Trash/>},
         {id:3, img:cat5, name:"Home & cleaning",status:"",icon1:<Pencil/>,icon2:<Trash/>},
@@ -19,9 +20,10 @@ export default function Categories() {
         {id:5, img:cat7, name:" Cooking",status:"",icon1:<Pencil/>,icon2:<Trash/>},
         
     ]
+    const [popUps,setPopUps]=useState(false)
 
-    const [value,setValue]=useState(' ');
-    const [dataSource,setDataSource]=useState(tableData)
+    const [value,setValue]=useState('');
+    const [dataSource,setDataSource]=useState(tableDatas)
     const [tableFilter,setTableFilter]=useState([])
 
 
@@ -90,10 +92,10 @@ export default function Categories() {
                             <div className='card--header'>
                                 <h5 className='card-title'> Category details</h5>
                            <form>
-                            <div className='input-group'> <input type="search" className='form-control' aria-label='Search' placeholder='search by name' value={value} onChange={filterData}/>
+                            <div className='input-group'> <input type="search" className='form-control' aria-label='Search' placeholder='search by name' value={value} onChange={filterData} />
                             <span className='tio-input-search '><Search/></span>
                             <div class="input-group-append">
-                                <button type="submit" class="input-group-text" fdprocessedid="maarpr"> Search</button>
+                                <button type="submit" class="input-group-text" fdprocessedid="maarpr"  > Search</button>
                                 </div>
                             </div>
                            </form>
@@ -118,7 +120,7 @@ export default function Categories() {
                                         <td ><img src={data.img} alt="logo" className='cat1'/></td>
                                         <td>{data.name}</td>
                                         <td>{data.status}</td>
-                                        <td><button className='icon1'>{data.icon1}</button><button className='icon2'>{data.icon2}</button></td>
+                                        <td><button className='icon1'>{data.icon1}</button><button className='icon2' onClick={()=>setPopUps(true)}>{data.icon2}</button></td>
                                     </tr>
                                         )
                                     }):
@@ -129,7 +131,7 @@ export default function Categories() {
                                         <td ><img src={data.img} alt="logo" className='cat1'/></td>
                                         <td>{data.name}</td>
                                         <td>{data.status}</td>
-                                        <td><button className='icon1'>{data.icon1}</button><button className='icon2'>{data.icon2}</button></td>
+                                        <td><button className='icon1'>{data.icon1}</button><button className='icon2' onClick={()=>setPopUps(true)}>{data.icon2}</button></td>
                                     </tr>
                                         )
                                     })
@@ -141,6 +143,7 @@ export default function Categories() {
                     </div>
                     
                 </div>
+                {popUps &&<PopUp closePopUp={()=>{setPopUps(false)}}/>}
         </div>
       
 
