@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import { Pencil, Search, Trash } from 'react-bootstrap-icons';
@@ -19,6 +19,26 @@ export default function Categories() {
         {id:5, img:cat7, name:" Cooking",status:"",icon1:<Pencil/>,icon2:<Trash/>},
         
     ]
+
+    const [value,setValue]=useState(' ');
+    const [dataSource,setDataSource]=useState(tableData)
+    const [tableFilter,setTableFilter]=useState([])
+
+
+
+    const filterData=(e)=>{
+        if(e.target.value != " "){
+
+                setValue(e.target.value)
+                const filterTable=dataSource.filter(o=>Object.keys(o).some(k=>
+                    String(o[k]).toLowerCase().includes(e.target.value.toLowerCase())
+                ))
+                setTableFilter([...filterTable])
+        }else{
+            setValue(e.target.value)
+            setDataSource([...dataSource])
+        }
+    }
 
 
   return (
@@ -70,7 +90,7 @@ export default function Categories() {
                             <div className='card--header'>
                                 <h5 className='card-title'> Category details</h5>
                            <form>
-                            <div className='input-group'> <input type="search" className='form-control' aria-label='Search' placeholder='search by name'/>
+                            <div className='input-group'> <input type="search" className='form-control' aria-label='Search' placeholder='search by name' value={value} onChange={filterData}/>
                             <span className='tio-input-search '><Search/></span>
                             <div class="input-group-append">
                                 <button type="submit" class="input-group-text" fdprocessedid="maarpr"> Search</button>
@@ -89,19 +109,32 @@ export default function Categories() {
                                         <th>Status</th>
                                         <th>Action</th>
                                         </tr>
-                                      
+                                    <tbody>
                            
-                                <tr>
-                                    <td>1</td>
-                                    <td><img src={cat1} alt="cat1"  className='cat1'/></td>
-                                    <td> Breakfast</td>
-                                    <td className='text-center'><div class="form-check form-switch"><input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked/></div></td>
-                                    <td >
-                                    <button className='icon1'><Pencil/></button> <button className='icon2'><Trash/></button>
-                                    </td>
-                                </tr>
-                               
-                            
+                                    {value.length>0 ? tableFilter.map((data)=>{
+                                        return(
+                                            <tr>
+                                        <td>{data.id}</td>
+                                        <td ><img src={data.img} alt="logo" className='cat1'/></td>
+                                        <td>{data.name}</td>
+                                        <td>{data.status}</td>
+                                        <td><button className='icon1'>{data.icon1}</button><button className='icon2'>{data.icon2}</button></td>
+                                    </tr>
+                                        )
+                                    }):
+                                    dataSource.map((data)=>{
+                                        return(
+                                            <tr>
+                                        <td>{data.id}</td>
+                                        <td ><img src={data.img} alt="logo" className='cat1'/></td>
+                                        <td>{data.name}</td>
+                                        <td>{data.status}</td>
+                                        <td><button className='icon1'>{data.icon1}</button><button className='icon2'>{data.icon2}</button></td>
+                                    </tr>
+                                        )
+                                    })
+                                    }
+                                </tbody>  
                             </table>
                         </div>
                         
