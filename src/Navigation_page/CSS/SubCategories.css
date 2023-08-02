@@ -1,5 +1,5 @@
 .subcategories{
-    width: 80%;
+    width: 100%;
 }
 .subcategories .row .head{
     font-size: 24px;
@@ -23,19 +23,25 @@
     background-color: green;
     color: aliceblue;
 }
+.subcategories .card .card-header{
+    background-color: white;
+}
 .subcategories .col-12 .card .table-responsive .table .sub-head{
     background-color: rgb(189, 238, 232);
     height: 60px;
-    text-align: left;
+    text-align: center;
+}
+.subcategories .col-12 .card .table-responsive .table {
+    width: 100%;
 }
 
 .subcategories .col-12 .card .table-responsive .table td{
     height: 60px;
-    text-align: left;
+    text-align: center;
 }
 .subcategories .col-12 .card .table-responsive .table .form-check .form-check-input{
     position: relative;
-    left: 20px;
+    left: 70px;
     
 }
 .subcategories .col-12 .card .table-responsive .table .cat1{
