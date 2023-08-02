@@ -4,8 +4,23 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import { Pencil, Search, Trash } from 'react-bootstrap-icons';
 import del from '..//../../assest/del.png'
 import cat1 from '..//../../assest/cat1.png'
+import cat4 from '..//../../assest/cat4.png'
+import cat5 from '..//../../assest/cat5.png'
+import cat6 from '..//../../assest/cat6.png'
+import cat7 from '..//../../assest/cat7.png'
 import '../../CSS/Categories.css'
 export default function Categories() {
+
+    const tableData=[
+        {id:1, img:cat1, name:"Breakfast",status:"",icon1:<Pencil/>,icon2:<Trash/>},
+        {id:2, img:cat4, name:"Home Applainces",status:"",icon1:<Pencil/>,icon2:<Trash/>},
+        {id:3, img:cat5, name:"Home & cleaning",status:"",icon1:<Pencil/>,icon2:<Trash/>},
+        {id:4, img:cat6, name:"Beverages",status:"",icon1:<Pencil/>,icon2:<Trash/>},
+        {id:5, img:cat7, name:" Cooking",status:"",icon1:<Pencil/>,icon2:<Trash/>},
+        
+    ]
+
+
   return (
    <>
       
