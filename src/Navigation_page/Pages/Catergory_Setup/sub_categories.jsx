@@ -39,7 +39,9 @@ export default function SubCategories() {
             <div className='subcategories'>
 
                 <div className='row'>
-                    <h1 className='col-3 fs-7 head'><span><MenuApp/></span><span>Sub Category Setup</span></h1>
+                    <h4 className=' head'>
+                        <span ><MenuApp/></span>
+                        <span > Sub Category Setup</span></h4>
                 </div>
             
             <div className='row'>
@@ -61,8 +63,8 @@ export default function SubCategories() {
                                         
 
                                     <div className="d-grid gap-2 d-md-flex justify-content-md-end">
-                                    <button className="btn btn-secondary btn-lg me-md-2 " type="button">reset</button>
-                                    <button className="btn btn-success btn-lg " type="button">Submit</button>
+                                    <button className="btn btn-2 btn-lg me-md-2 " type="button">Reset</button>
+                                    <button className="btn btn-1 btn-lg " type="button">Submit</button>
                                     </div>
                             </form>
                         </div>

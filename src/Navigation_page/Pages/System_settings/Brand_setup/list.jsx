@@ -1,8 +1,28 @@
 import React from 'react'
 import './list.css';
 import {FaPenSquare} from 'react-icons/fa'
-import {AiFillDelete} from 'react-icons/ai'
+ import {AiFillDelete} from 'react-icons/ai'
+import { useState } from 'react';
+
 const List = () => {
+
+  const tableData =[
+       {id: 1, Branch:'', name: 'Farmgate', BranchType: 'Sub-branch', Contactinfo: 'parvej@gmail.com', icon1:<FaPenSquare />,icon2:<AiFillDelete />,
+      },
+      {id: 2, Branch:'', name: 'Dhaka', BranchType: 'Sub-branch', Contactinfo: 'Dhaka@gmail.com',  icon1:<FaPenSquare />,icon2:<AiFillDelete />,
+      },
+      {id: 3, Branch:'',   name: 'Thirdbranch', BranchType: 'Sub-branch', Contactinfo: 'demo67@gmail.com', icon1:<FaPenSquare />,icon2:<AiFillDelete />,
+      },
+      {id: 4,  Branch:'',   name: 'Secondbranch', BranchType: 'Sub-branch', Contactinfo: 'demo67@gmail.com',  icon1:<FaPenSquare />,icon2:<AiFillDelete />, 
+      },
+      {id: 5,  Branch:'',  name: 'Main', BranchType: 'Sub-branch', Contactinfo: 'test.branch@gmail.com',  icon1:<FaPenSquare />,icon2:<AiFillDelete />, 
+      },
+      
+  ]
+  const [searchText, setsearchText] = useState("");
+  
+  
+ 
   return (
     <>
       <div className='container'>
@@ -25,11 +45,23 @@ const List = () => {
                    </div>
                   <div className='col-12 col-lg-2'>
                    <input type='text'
-                    name='search'
+                   className='search-box'
+                    value = {searchText}
+                    onChange={(e)=>
+                      {setsearchText(e.target.value)
+                    }}
                    placeholder='Search by name'/>
                   </div>
                   <div className='col-12 col-lg-1'>
-                   <button className='search'>Search</button>
+                    <button className='search' 
+                    onClick ={()=>{ 
+                     const filterTable = tableData.filter(
+                       (tab) => tab.data.BranchName.includes(searchText)
+                      );
+                       setsearchText(filterTable);
+                      // console.log(searchText);
+                   }} 
+                   >Search</button>
                   </div>
                 </div>
               </div><br/>
@@ -37,31 +69,126 @@ const List = () => {
                 <thead className='table-success'>
                   <tr>
                     <th>SL</th>
-                    <th>Branch Name</th>
-                     <th>Branch Type</th>
-                     <th>Contact Info</th>
+                    
+                    <th>Branch</th>
+                    <th>Name</th>
+                     <th>BranchType</th>
+                     <th>Contactinfo</th>
                      <th>Status</th>
                      <th>Action</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
+                  {/* <tr>
                     <td>1</td>
                     <td>
                     <div className='flex'>
                       <div>
-                       <img onerror="" src="https://grofresh-admin.6amtech.com/public/assets/admin/img/store-1.png" width={"50px"}></img>
+                       <img  src="https://grofresh-admin.6amtech.com/public/assets/admin/img/store-1.png" width={"50px"}></img>
                        </div>
                      <div>
                       <p>Farmgate</p>
                      </div>
-                    </div></td>
+                    </div>
+                    </td>
                     <td>Sub Branch</td>
                     <td>parvej@gmail.com</td>
                     <td> <label className='form-check form-switch'> <input type="checkbox" className='form-check-input ' checked/></label></td>
                     <td style={{fontSize:"30px"}}><FaPenSquare/>
                             <AiFillDelete/></td>
                   </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>
+                    <div className='flex'>
+                      <div>
+                       <img onerror="" src="https://grofresh-admin.6amtech.com/public/assets/admin/img/store-1.png" width={"50px"}></img>
+                       </div>
+                     <div>
+                      <p>Dhaka</p>
+                     </div>
+                    </div>
+                    </td>
+                    <td>Sub Branch</td>
+                    <td>dhaka@gmail.com</td>
+                    <td> <label className='form-check form-switch'> <input type="checkbox" className='form-check-input ' checked/></label></td>
+                    <td style={{fontSize:"30px"}}><FaPenSquare/>
+                            <AiFillDelete/></td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>
+                    <div className='flex'>
+                      <div>
+                       <img onerror="" src="https://grofresh-admin.6amtech.com/public/assets/admin/img/store-1.png" width={"50px"}></img>
+                       </div>
+                     <div>
+                      <p>Third Branch</p>
+                     </div>
+                    </div>
+                    </td>
+                    <td>Sub Branch</td>
+                    <td>demo67@gmail.com</td>
+                    <td> <label className='form-check form-switch'> <input type="checkbox" className='form-check-input ' checked/></label></td>
+                    <td style={{fontSize:"30px"}}><FaPenSquare/>
+                            <AiFillDelete/></td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>
+                    <div className='flex'>
+                      <div>
+                       <img onerror="" src="https://grofresh-admin.6amtech.com/public/assets/admin/img/store-1.png" width={"50px"}></img>
+                       </div>
+                     <div>
+                      <p>Second Branch</p>
+                     </div>
+                    </div>
+                    </td>
+                    <td>Sub Branch</td>
+                    <td>demo619@gmail.com</td>
+                    <td> <label className='form-check form-switch'> <input type="checkbox" className='form-check-input ' checked/></label></td>
+                    <td style={{fontSize:"30px"}}><FaPenSquare/>
+                            <AiFillDelete/></td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>
+                    <div className='flex'>
+                      <div>
+                       <img onerror="" src="https://grofresh-admin.6amtech.com/public/assets/admin/img/store-1.png" width={"50px"}></img>
+                       </div>
+                     <div>
+                      <p>Main</p>
+                     </div>
+                    </div>
+                    </td>
+                    <td>Sub Branch</td>
+                    <td>test.branch@gmail.com</td>
+                    <td> <label className='form-check form-switch'> <input type="checkbox" className='form-check-input ' checked/></label></td>
+                    <td style={{fontSize:"30px"}}><FaPenSquare/>
+                            <AiFillDelete/></td>
+                  </tr> */}
+                    { tableData.map((data)=>{
+                    return(
+                      <tr>
+                      
+                        <td>{data.id}</td>
+                        
+                        <td>{data.Branch}</td>
+                        <td>{data.name}</td>
+                        <td>{data.BranchType}</td>
+                        <td>{data.Contactinfo}</td>
+                        <td>{data.Status}</td>
+
+                        <td><button className='icon-1'>{data.icon-1}</button></td>
+                        <td><button className='icon-2'>{data.icon-2}</button></td>
+                       
+                      </tr>
+                    );
+                  }
+                  
+                  )} 
                 </tbody>
               </table>
            </div>

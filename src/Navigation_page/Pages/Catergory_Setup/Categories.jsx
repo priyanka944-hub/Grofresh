@@ -77,9 +77,9 @@ export default function Categories() {
                                         </div>
                                         
 
-                                    <div className="d-grid gap-2 d-md-flex justify-content-md-end">
-                                    <button className="btn btn-secondary btn-lg me-md-2 " type="button">reset</button>
-                                    <button className="btn btn-success btn-lg " type="button">Submit</button>
+                                    <div className="d-grid gap-2 d-md-flex justify-content-md-end ">
+                                    <button className="btn btn-2 btn-lg me-md-2 " type="button">Reset</button>
+                                    <button className="btn btn-1 btn-lg " type="button">Submit</button>
                                     </div>
                             </form>
                         </div>

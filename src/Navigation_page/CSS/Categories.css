@@ -1,6 +1,12 @@
-.categories{
+.categories .card{
     width: 100%;
+    margin-left: 50px;
 }
+.categories .col-12 .card{
+margin-top: 10px;
+
+}
+
 .categories .row .head{
     font-size: 23px;
    margin-left: 30px;
@@ -15,7 +21,7 @@
     margin-bottom: 10px;
 }
  .categories .col-12 .card .card-header .card--header {
-    width: 100%;
+    width: 80%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -34,7 +40,7 @@
     background-color: white;
 }
 .categories .card .card-header .input-group .input-group-append .input-group-text{
-    background-color: green;
+    background-color: rgb(5, 112, 112);
     color: aliceblue;
 }
 .categories .col-12 .card .table-responsive .table .cat-head{
@@ -44,7 +50,7 @@
 }
 .categories .col-12 .card .table-responsive .table .form-check .form-check-input{
     position: relative;
-    left: 30px;
+    left: 50px;
 }
 .categories .col-12 .card .table-responsive .table .cat1{
     width: 50px;
@@ -75,4 +81,18 @@
 .categories .col-12 .card .table-responsive .table .icon2:hover{
     background-color:red ;
     color: aliceblue;
+}
+.categories .card-body  .btn-1{
+    background-color: rgb(5 ,112,112);
+    color: white;
+    padding: 8px 25px;
+}
+.categories .card-body  .btn-2{
+    background-color:rgb(202, 191, 191);
+    color: black;
+    padding: 8px 25px;
+}
+.categories .card-body  .btn-2:hover{
+    background-color:rgb(158, 154, 154);
+   
 }

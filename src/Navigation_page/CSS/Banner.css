@@ -11,6 +11,10 @@
     text-align: left;
     margin-top: 10px;
  }
+ .Banner .card {
+   margin-bottom: 10px;
+   width: 98%
+ }
  .Banner .card .card-body .row .col-6 .form-row .col-12{
     margin-bottom: 10px;
  }
