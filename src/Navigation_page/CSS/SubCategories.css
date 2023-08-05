@@ -1,6 +1,9 @@
 .subcategories{
     width: 100%;
 }
+.subUp{
+    display: none;
+}
  .subcategories .row .head .menu {
     font-size: 40px;
     margin-left: 30px;

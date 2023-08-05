@@ -22,8 +22,8 @@ export default function PopUp({closePopUp,deleteItem}) {
                   if(e.target.className==="btn-yes"){deleteItem()}
                   else{ closePopUp()} 
                 }}>
-                    <div className='col-5 '> <button className='btn btn-no' >No</button> </div>
-                    <div className='col-5'> <button className='btn btn-yes' onClick={(e)=>{
+                    <div className='col-5 '> <button className='btn btn-no btn-dark' >No</button> </div>
+                    <div className='col-5'> <button className='btn btn-yes btn-success' onClick={(e)=>{
                   if(e.target.className==="btn-yes"){deleteItem()}
                   else{ closePopUp()} 
                 }} >Yes</button> </div>
