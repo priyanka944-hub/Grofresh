@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./messages.css";
+import "./Messages.css";
 import * as Icon from "react-bootstrap-icons";
 import image from "../../../assest/img1.jpg";
 
@@ -63,22 +63,24 @@ export default function Messages() {
     }
   };
   return (
-    <div className="Messages">
-      <div className="d-flex m-3 gap-3 align-items-center">
+    <div>
+      <div className="d-flex mb-3 gap-3 align-items-center">
         <img
           src="https://grofresh-admin.6amtech.com/public/assets/admin/img/messages.png"
           alt="message"
           height={30}
         />
-        <h3>Messages</h3>
+        <h4>Messages</h4>
       </div>
       <div className="messages-chatbox">
         <div className="messages-left-chat">
           <div className="d-flex m-3 gap-2" style={{ width: "100%" }}>
             <img src={image} height={50} style={{ borderRadius: "50%" }} />
             <div className="d-flex flex-column">
-              <strong>Admin Panel</strong>
-              <span style={{ fontSize: "15px" }}>Master Admin</span>
+              <strong style={{ fontSize: "14px" }}>Admin Panel</strong>
+              <span style={{ fontSize: "14px", color: "grey" }}>
+                Master Admin
+              </span>
             </div>
           </div>
           <input
@@ -94,8 +96,8 @@ export default function Messages() {
           >
             <img src={image} height={50} style={{ borderRadius: "50%" }} />
             <div className="d-flex flex-column">
-              <strong>John Ali Panel</strong>
-              <span style={{ fontSize: "15px" }}>Customer</span>
+              <strong style={{ fontSize: "14px" }}>John Ali Panel</strong>
+              <span style={{ fontSize: "14px", color: "grey" }}>Customer</span>
             </div>
           </div>
           <div
@@ -105,8 +107,8 @@ export default function Messages() {
           >
             <img src={image} height={50} style={{ borderRadius: "50%" }} />
             <div className="d-flex flex-column">
-              <strong>Pili 123</strong>
-              <span style={{ fontSize: "15px" }}>Customer</span>
+              <strong style={{ fontSize: "14px" }}>Pili 123</strong>
+              <span style={{ fontSize: "14px", color: "grey" }}>Customer</span>
             </div>
           </div>
           <div
@@ -116,8 +118,8 @@ export default function Messages() {
           >
             <img src={image} height={50} style={{ borderRadius: "50%" }} />
             <div className="d-flex flex-column">
-              <strong>Aziz Sarker</strong>
-              <span style={{ fontSize: "15px" }}>Customer</span>
+              <strong style={{ fontSize: "14px" }}>Aziz Sarker</strong>
+              <span style={{ fontSize: "14px", color: "grey" }}>Customer</span>
             </div>
           </div>
         </div>

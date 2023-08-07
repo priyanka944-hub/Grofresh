@@ -1,9 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import logo from "../../../assest/subscriber.png";
 import "../../CSS/Subscribed.css";
+
+const mails = [
+  { SNo: "1", email: "6amtech@gmail.com", subscribedAt: "	2022/12/09" },
+  { SNo: "2", email: "tester@gmail.com", subscribedAt: "	2022/12/09" },
+  { SNo: "3", email: "mobarak@gmail.com", subscribedAt: "	2022/12/09" },
+  { SNo: "4", email: "test@gmail.com", subscribedAt: "	2022/12/09" },
+];
+
 export default function SubscribedEmails() {
+  const [data, setData] = useState(mails);
+  const [search, setSearch] = useState("");
+
+  const handleSearch = (e) => {
+    setSearch(e.target.value);    
+    if (e.target.value === "") {
+      setData(mails);
+    } else {
+      const filter = data.filter((each) => each.email.includes(search));
+      setData(filter);
+    }
+  };
+
   return (
     <>
       <div className=" Subscribedemails">
@@ -26,6 +47,8 @@ export default function SubscribedEmails() {
                     type="search"
                     className="form-control search"
                     placeholder="Search email address"
+                    onChange={handleSearch}
+                    value={search}
                   />
                   <div className="input-group-append">
                     <button type="submit" className="input-group-text">
@@ -38,7 +61,7 @@ export default function SubscribedEmails() {
             </div>
           </div>
 
-          <div className="table-responsive">
+          <div className="table-responsive" style={{width:'95%',margin:"auto"}}>
             <table className="table table-hover table-borderless ">
               <tr className="thead-light">
                 <th>SL</th>
@@ -46,34 +69,19 @@ export default function SubscribedEmails() {
                 <th>Subscribed At</th>
               </tr>
 
-              <tr>
-                <td> 1</td>
-                <td>
-                  <a href="#">6amtech@gmail.com</a>
-                </td>
-                <td>2022/12/09 </td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>
-                  <a href="#">tester@gmail.com</a>
-                </td>
-                <td>2022/12/09 </td>
-              </tr>
-              <tr>
-                <td>3 </td>
-                <td>
-                  <a href="#">mobarak@gmail.com</a>
-                </td>
-                <td>2022/12/09 </td>
-              </tr>
-              <tr>
-                <td>4</td>
-                <td>
-                  <a href="#">test@gmail.com</a>
-                </td>
-                <td>2022/12/09 </td>
-              </tr>
+              <tbody>
+                {data.map((each) => {
+                  return (
+                    <tr key={each.SNo}>
+                      <td> {each.SNo}</td>
+                      <td>
+                        <td>{each.email}</td>
+                      </td>
+                      <td>{each.subscribedAt} </td>
+                    </tr>
+                  );
+                })}
+              </tbody>
             </table>
           </div>
         </div>
