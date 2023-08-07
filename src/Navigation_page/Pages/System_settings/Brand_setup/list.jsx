@@ -20,6 +20,7 @@ const List = () => {
       
   ]
   const [searchText, setsearchText] = useState("");
+   const[filteredTable, setfilteredTable] = useState(tableData);
   
   
  
@@ -55,11 +56,16 @@ const List = () => {
                   <div className='col-12 col-lg-1'>
                     <button className='search' 
                     onClick ={()=>{ 
-                     const filterTable = tableData.filter(
-                       (tab) => tab.data.BranchName.includes(searchText)
-                      );
-                       setsearchText(filterTable);
-                      // console.log(searchText);
+                      const filterTable = tableData.filter(
+                        (tab) => tab.name.toLowerCase().includes(searchText.toLowerCase())
+                       );
+                        setfilteredTable(filterTable);
+                      //  console.log(searchText);
+
+  
+
+
+
                    }} 
                    >Search</button>
                   </div>
@@ -169,7 +175,7 @@ const List = () => {
                     <td style={{fontSize:"30px"}}><FaPenSquare/>
                             <AiFillDelete/></td>
                   </tr> */}
-                    { tableData.map((data)=>{
+                    { filteredTable.map((data)=>{
                     return(
                       <tr>
                       
@@ -181,8 +187,8 @@ const List = () => {
                         <td>{data.Contactinfo}</td>
                         <td>{data.Status}</td>
 
-                        <td><button className='icon-1'>{data.icon-1}</button></td>
-                        <td><button className='icon-2'>{data.icon-2}</button></td>
+                        <td><button className='icon-1'>{data.icon1}</button>
+                        <button className='icon-2'>{data.icon2}</button></td>
                        
                       </tr>
                     );
