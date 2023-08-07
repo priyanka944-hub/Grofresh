@@ -1,8 +1,8 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
  import 'bootstrap/dist/js/bootstrap.bundle.min.js';
- import '../../CSS/category_discount.css'
- import coupon from '../../../assest/coupon.png';
+ import './Card.css'
+import coupon from './coupon.png';
 import {Pencil,Trash}from 'react-bootstrap-icons';
 
 export default function Card() {

@@ -1,9 +1,38 @@
 .subcategories{
-    width: 80%;
+    width: 100%;
 }
-.subcategories .row .head{
-    font-size: 24px;
+.subUp{
+    display: none;
+}
+ .subcategories .row .head .menu {
+    font-size: 40px;
     margin-left: 30px;
+} 
+.subcategories .row .head .menu .app {
+   
+    margin-left: 30px;
+} 
+ .subcategories .row .card {
+    width: 100%;
+    margin-left: 20px;
+    margin-bottom: 10px;
+  
+}
+.subcategories .card .card-body .btn-1{
+    background-color: rgb(5, 112, 112);
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+.subcategories .card .card-body .btn-2{
+    background-color: rgb(179, 174, 174);
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 2px;
+    padding-bottom: 2px;
 }
  .subcategories .col-12 .card .card-header .card--header {
     width: 100%;
@@ -11,6 +40,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    /* margin-left: 10px; */
 }
 .subcategories .card .card-header .input-group .tio-input-search {
     position: absolute;
@@ -20,22 +50,28 @@
     
 }
 .subcategories .card .card-header .input-group .input-group-append .input-group-text{
-    background-color: green;
+    background-color: rgb(5, 112, 112);
     color: aliceblue;
+}
+.subcategories .card .card-header{
+    background-color: white;
 }
 .subcategories .col-12 .card .table-responsive .table .sub-head{
     background-color: rgb(189, 238, 232);
     height: 60px;
-    text-align: left;
+    text-align: center;
+}
+.subcategories .col-12 .card .table-responsive .table {
+    width: 100%;
 }
 
 .subcategories .col-12 .card .table-responsive .table td{
     height: 60px;
-    text-align: left;
+    text-align: center;
 }
 .subcategories .col-12 .card .table-responsive .table .form-check .form-check-input{
     position: relative;
-    left: 20px;
+    left: 70px;
     
 }
 .subcategories .col-12 .card .table-responsive .table .cat1{

@@ -41,3 +41,15 @@
   height: 20px;
   text-align: center;
 }
+.new_sale_container .newsale-right-box .btn-1{
+  background-color: rgb(5,112,112);
+  color: white;
+}
+.new_sale_container .newsale-right-box .input{
+  margin-bottom: 20px;
+}
+.new_sale_container .newsale-right-box .table-hover .gap-2 .btn-2{
+  background-color: rgb(5,112,112);
+  color: white;
+}
+ 

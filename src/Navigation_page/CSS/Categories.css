@@ -1,6 +1,10 @@
 .categories{
     width: 100%;
 }
+
+.setCategories{
+    display: none;
+}
 .categories .row .head{
     font-size: 23px;
    margin-left: 30px;

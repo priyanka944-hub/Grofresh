@@ -32,6 +32,7 @@ import ProductAttribute from "./Navigation_page/Pages/Product_setup/product_att"
 import ProductList from "./Navigation_page/Pages/Product_setup/product_list";
 import Banner from "./Navigation_page/Pages/poromotiom managemnet/banner";
 import Coupons from "./Navigation_page/Pages/poromotiom managemnet/coupons";
+ import Card from "./Navigation_page/Pages/poromotiom managemnet/category_discount";
 import EmployeeRoleSetup from "./Navigation_page/Pages/User_Management/employees/employee_role";
 import Addfund from "./Navigation_page/Pages/User_Management/Customer_Wallet/add_fund";
 import Addnew from "./Navigation_page/Pages/System_settings/Brand_setup/add_new";
@@ -107,7 +108,7 @@ function App() {
             <Route path={"coupons"} element={<Coupons />} />
             <Route path={"flash-sale"} element={<Flashsale />} />
             <Route path={"send-notification"} element={<Sendnotifications />} />
-
+            <Route path={"category_discount"} element={<Card/>} /> 
             {/* User Management */}
             <Route path={"/subcribed-emails"} element={<SubscribedEmails />} />
             <Route path={"/product-reviews"} element={<ProductReviews />} />

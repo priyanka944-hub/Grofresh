@@ -181,12 +181,12 @@ export default function NewSale() {
           <select className="form-control mb-2">
             <option>Walk in...</option>
           </select>
-          <button className="btn btn-success form-control">
+          <button className="btn btn-1  form-control">
             Add New Customer
           </button>
         </div>
         <strong>Select Branch</strong>
-        <select className="form-control">
+        <select className="form-control input">
           <option>Main</option>
         </select>
         <div className="">
@@ -241,9 +241,9 @@ export default function NewSale() {
         </h6>
         <button className="btn btn-dark m-2">Card</button>
         <button className="btn btn-light">Cash</button>
-        <div className="row gap-2" style={{ width: "95%", margin: "auto" }}>
+        <div className="row gap-2 " style={{ width: "95%", margin: "auto" }}>
           <button className="col btn btn-outline-danger">Cancel Order</button>
-          <button className="col btn btn-success">Place Order</button>
+          <button className="col btn btn-2">Place Order</button>
         </div>
       </div>
     </div>
