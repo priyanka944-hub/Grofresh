@@ -3,6 +3,8 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import {  MenuApp, Pencil, Search, Trash } from 'react-bootstrap-icons';
 import '../../CSS/SubCategories.css'
+import PopUp from './PopUp';
+import SubCtegoryUpdate from './SubCtegoryUpdate';
 export default function SubCategories() {
 
     const tableData=[
@@ -16,10 +18,11 @@ export default function SubCategories() {
     ]
 
     const [value,setValue]=useState('')
-
     const [dataSource,setDataSource]=useState(tableData);
     const [tableFilter,setTableFilter]=useState([])
-
+    const [popUps,setPopUps]=useState(false)
+    const [handleDeletes,setHandleDeletes]=useState(tableData)
+    const [active,setActive]=useState(false)
 
     const filterData=(e)=>{
         if(e.target.value!=''){
@@ -36,7 +39,7 @@ export default function SubCategories() {
   return ( 
     
     <>
-            <div className='subcategories'>
+            <div className={` ${active?'subUp':'subcategories'}`}>
 
                 <div className='row'>
                     <h4 className=' head'>
@@ -105,7 +108,8 @@ export default function SubCategories() {
                                         <td >{data.img}</td>
                                         <td>{data.name}</td>
                                         <td>{data.status}</td>
-                                        <td><button className='icon1'>{data.icon1}</button><button className='icon2'>{data.icon2}</button></td>
+                                        <td><button className='icon1' onClick={()=>{setActive("FirstPage");
+                                                                                   }}>{data.icon1}</button><button className='icon2' onClick={()=>setPopUps(true)}>{data.icon2}</button></td>
                                     </tr>
                                         )
                                     }):
@@ -116,7 +120,8 @@ export default function SubCategories() {
                                         <td >{data.img}</td>
                                         <td>{data.name}</td>
                                         <td>{data.status}</td>
-                                        <td><button className='icon1'>{data.icon1}</button><button className='icon2'>{data.icon2}</button></td>
+                                        <td><button className='icon1' onClick={()=>{setActive("FirstPage");
+                                                                                   }}>{data.icon1}</button><button className='icon2' onClick={()=>setPopUps(true)}>{data.icon2}</button></td>
                                     </tr>
                                         )
                                     })
@@ -131,8 +136,12 @@ export default function SubCategories() {
                     </div>
                     
                 </div>
-
+                {popUps &&<PopUp closePopUp={()=>{setPopUps(false)}} deleteItem={(id)=>{
+                    const newTbale=handleDeletes.filter(li=>li.id !==id)
+                    setHandleDeletes([...newTbale])
+                }}/>}                   
         </div>
+     { active==="FirstPage" && <SubCtegoryUpdate/>}
 </>
   )
 }

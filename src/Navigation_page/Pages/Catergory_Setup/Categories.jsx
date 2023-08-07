@@ -10,6 +10,7 @@ import cat6 from '..//../../assest/cat6.png'
 import cat7 from '..//../../assest/cat7.png'
 import '../../CSS/Categories.css'
 import PopUp from './PopUp';
+import UpdateCategory from './UpdateCategory';
 export default function Categories() {
 
     const tableDatas=[
@@ -20,13 +21,16 @@ export default function Categories() {
         {id:5, img:cat7, name:" Cooking",status:"",icon1:<Pencil/>,icon2:<Trash/>},
         
     ]
+   
     const [popUps,setPopUps]=useState(false)
 
     const [value,setValue]=useState('');
     const [dataSource,setDataSource]=useState(tableDatas)
     const [tableFilter,setTableFilter]=useState([])
+    const [handleDeletes,setHandleDeletes]=useState(tableDatas)
 
-
+    const [active,setActive]= useState(false)
+  
 
     const filterData=(e)=>{
         if(e.target.value != " "){
@@ -42,12 +46,13 @@ export default function Categories() {
         }
     }
 
-
+    
+   
   return (
    <>
       
 
-            <div className='categories col-md-11'>
+            <div className= {` ${active?'setCategories':'categories'}`}>
 
                 <div className='row'>
                     <h2 className='col-3 fs-7 head'>
@@ -115,23 +120,25 @@ export default function Categories() {
                            
                                     {value.length>0 ? tableFilter.map((data)=>{
                                         return(
-                                            <tr>
+                                            <tr >
                                         <td>{data.id}</td>
                                         <td ><img src={data.img} alt="logo" className='cat1'/></td>
                                         <td>{data.name}</td>
                                         <td>{data.status}</td>
-                                        <td><button className='icon1'>{data.icon1}</button><button className='icon2' onClick={()=>setPopUps(true)}>{data.icon2}</button></td>
+                                        <td><button className='icon1' onClick={()=>{setActive("FirstPage");
+                                                                                   }}>{data.icon1}</button><button className='icon2' onClick={()=>setPopUps(true)}>{data.icon2}</button></td>
                                     </tr>
                                         )
                                     }):
                                     dataSource.map((data)=>{
                                         return(
-                                            <tr>
+                                            <tr >
                                         <td>{data.id}</td>
                                         <td ><img src={data.img} alt="logo" className='cat1'/></td>
                                         <td>{data.name}</td>
                                         <td>{data.status}</td>
-                                        <td><button className='icon1'>{data.icon1}</button><button className='icon2' onClick={()=>setPopUps(true)}>{data.icon2}</button></td>
+                                        <td><button className='icon1' onClick={()=>{setActive("FirstPage");
+                                                                   }}>{data.icon1}</button><button className='icon2' onClick={()=>setPopUps(true)}>{data.icon2}</button></td>
                                     </tr>
                                         )
                                     })
@@ -143,10 +150,15 @@ export default function Categories() {
                     </div>
                     
                 </div>
-                {popUps &&<PopUp closePopUp={()=>{setPopUps(false)}}/>}
+                {popUps &&<PopUp closePopUp={()=>{setPopUps(false)}}  deleteItem={(id)=>{
+                    const newTbale=handleDeletes.filter(li=>li.id !==id)
+                    setHandleDeletes([...newTbale])
+                }}  />}
+
+               
         </div>
       
-
+        {  active==="FirstPage" && <UpdateCategory/>}
 
    </>
  

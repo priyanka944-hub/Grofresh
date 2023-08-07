@@ -1,0 +1,30 @@
+.SubUpdate{
+    width: 90%;
+}
+ .SubUpdate .row .head .menu {
+    font-size: 40px;
+    margin-left: 30px;
+} 
+.SubUpdate.row .head .menu .app {  
+    margin-left: 30px;
+} 
+ .SubUpdate .row .card {
+    width: 100%;
+    margin-top: 30px;
+}
+.SubUpdate .card .card-body .btn-1{
+    background-color: rgb(5, 112, 112);
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+.SubUpdate .card .card-body .btn-2{
+    background-color: rgb(179, 174, 174);
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}

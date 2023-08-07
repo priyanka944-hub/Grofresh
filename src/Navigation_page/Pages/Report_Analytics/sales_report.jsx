@@ -17,68 +17,75 @@ export default function SaleReportOverview() {
       </div>
 
       <div className="slaes-box d-flex justify-content-around align-items-center flex-wrap gap-5">
-        <div className="card-header">
-          <div className="form-bold w-100 mb-2">Select Date Range</div>
-          <form className="pt-3">
-            <div className="row g-3 g-sm-4 g-md-3 g-lg-4">
-              <div className="col-sm-6 col-md-4 col-lg-2">
-                <select className="custom-select custom-select-sm text-capitalize min-h-45px">
-                  <option disabled>---Select Branch---</option>
-                  <option value="all">All Branch</option>
-                  <option value="1">Main</option>
-                  <option value="10">Second Branch</option>
-                  <option value="11">Third Branch</option>
-                  <option value="12">Dhaka</option>
-                  <option value="13">Farmgate</option>
-                </select>
-              </div>
-              <div className="col-sm-6 col-md-4 col-lg-3">
-                <div className="input-date-group">
-                  <label className="input-label" for="start_date">
-                    Start Date
-                  </label>
-                  <label className="input-date">
-                    <input
-                      type="date"
-                      id="start_date"
-                      name="start_date"
-                      className="js-flatpickr form-control flatpickr-custom min-h-45px flatpickr-input"
-                      placeholder="yy-mm-dd"
-                    />
-                  </label>
-                </div>
-              </div>
-              <div className="col-sm-6 col-md-4 col-lg-3">
-                <div className="input-date-group">
-                  <label className="input-label" for="end_date">
-                    End Date
-                  </label>
-                  <label className="input-date">
-                    <input
-                      type="text"
-                      className="js-flatpickr form-control flatpickr-custom min-h-45px flatpickr-input"
-                      id="end_date"
-                      name="end_date"
-                      placeholder="yy-mm-dd"
-                    />
-                  </label>
-                </div>
-              </div>
-              <div className="col-sm-6 col-md-12 col-lg-4 __btn-row btn-row">
-                <a href="#" id className="btn w-100 btn--reset min-h-45px">
-                  Clear
-                </a>
-                <button
-                  type="submit"
-                  id="show_filter_data"
-                  className="btn w-100 btn--primary min-h-45px"
-                >
-                  Show data
-                </button>
+      <div className="card">
+      <div className="card-header">
+        <div className="form-bold w-100 mb-2">Select Date Range</div>
+        <form className="pt-3">
+          <div className="row g-3 g-sm-4 g-md-3 g-lg-4">
+            <div className="col-sm-6 col-md-4 col-lg-2">
+              <select className="custom-select custom-select-sm text-capitalize min-h-45px">
+                <option disabled>---Select Branch---</option>
+                <option value="all">All Branch</option>
+                <option value="1">Main</option>
+                <option value="10">Second Branch</option>
+                <option value="11">Third Branch</option>
+                <option value="12">Dhaka</option>
+                <option value="13">Farmgate</option>
+              </select>
+            </div>
+            <div className="col-sm-6 col-md-4 col-lg-3">
+              <div className="input-date-group">
+                <label className="input-label" for="start_date">
+                  Start Date
+                </label>
+                <label className="input-date">
+                  <input
+                    type="date"
+                    id="start_date"
+                    name="start_date"
+                    className="js-flatpickr form-control flatpickr-custom min-h-45px flatpickr-input"
+                    placeholder="yy-mm-dd"
+                  />
+                </label>
               </div>
             </div>
-          </form>
-        </div>
+            <div className="col-sm-6 col-md-4 col-lg-3">
+              <div className="input-date-group">
+                <label className="input-label" for="end_date">
+                  End Date
+                </label>
+                <label className="input-date">
+                  <input
+                    type="text"
+                    className="js-flatpickr form-control flatpickr-custom min-h-45px flatpickr-input"
+                    id="end_date"
+                    name="end_date"
+                    placeholder="yy-mm-dd"
+                  />
+                </label>
+              </div>
+            </div>
+            <div className="col-sm-6 col-md-12 col-lg-4 __btn-row btn-row">
+              <a
+                href="#"
+                id
+                className="btn w-100 btn--reset min-h-45px"
+              >
+                Clear
+              </a>
+              <button
+                type="submit"
+                id="show_filter_data"
+                className="btn w-100 btn--primary min-h-45px"
+              >
+                Show data
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
         <div className="sales-container">
           <div className="row gap-5 place-items-center">
             <div className="sales-card col">
